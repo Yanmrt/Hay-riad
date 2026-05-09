@@ -1,0 +1,2910 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <!-- ═══ PRIMARY SEO ═══ -->
+  <title>Hay Riad Guide | The Ultimate Guide to Restaurants, Health &amp; Shopping in Rabat</title>
+  <meta name="description" content="Discover the best of Hay Riad, Rabat: gourmet restaurants, 24h pharmacies, supermarkets (Marjane, Carrefour) and local services. Your premium neighbourhood guide 2026."/>
+  <meta name="keywords" content="Hay Riad Rabat, restaurants Rabat, احسن مطعم في حي الرياض, صيدلية, pharmacie de garde Rabat, Marjane حي الرياض, Carrefour Rabat, supermarkets Rabat, حي الرياض, meilleur quartier Rabat, Hay Riad guide 2026, shopping Rabat, real estate Hay Riad, مطاعم الرباط"/>
+  <meta name="author" content="Hay Riad Guide"/>
+  <meta name="robots" content="index, follow"/>
+  <link rel="canonical" href="https://hayriadguide.ma/"/>
+
+  <!-- ═══ OPEN GRAPH ═══ -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:locale" content="fr_MA"/>
+  <meta property="og:site_name" content="Hay Riad Guide"/>
+  <meta property="og:title" content="Hay Riad Guide | The Ultimate Guide to Restaurants, Health &amp; Shopping in Rabat"/>
+  <meta property="og:description" content="Discover the best of Hay Riad, Rabat's most prestigious district — gourmet restaurants, 24h pharmacies, supermarkets and local services. Premium guide 2026."/>
+  <meta property="og:image" content="section 1 .png"/>
+  <meta property="og:url" content="https://hayriadguide.ma/"/>
+
+  <!-- ═══ TWITTER CARD ═══ -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Hay Riad Guide | Restaurants, Health &amp; Shopping in Rabat"/>
+  <meta name="twitter:description" content="The prestige guide to Rabat's finest district — gourmet restaurants, 24h pharmacies, supermarkets, real estate."/>
+  <meta name="twitter:image" content="section 1 .png"/>
+
+  <!-- ═══ STRUCTURED DATA — LocalBusiness ═══ -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Hay Riad Guide",
+    "url": "https://hayriadguide.ma/",
+    "description": "Guide premium du quartier Hay Riad, Rabat — restaurants, pharmacies, shopping et services de proximité.",
+    "inLanguage": "fr",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://hayriadguide.ma/?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    },
+    "about": {
+      "@type": "Place",
+      "name": "Hay Riad",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Rabat",
+        "addressCountry": "MA"
+      }
+    }
+  }
+  </script>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+  <style>
+    :root {
+      --gold:      #d4af37;
+      --gold-l:    #f0d060;
+      --gold-dim:  rgba(212,175,55,0.15);
+      --dark:      #0a1520;
+      --dark2:     #0d1e2e;
+      --dark3:     #112030;
+      --card-bg:   #0f1e2d;
+      --border:    rgba(212,175,55,0.18);
+    }
+
+    *  { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: var(--dark);
+      color: #fff;
+    }
+
+    /* ── typography ── */
+    .font-playfair { font-family: 'Playfair Display', serif; }
+
+    .gold-text { color: var(--gold); }
+
+    .gold-gradient {
+      background: linear-gradient(90deg, var(--gold), var(--gold-l), var(--gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+
+    /* ── layout helpers ── */
+    .gold-rule {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+
+    .section-label {
+      font-size: .72rem;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      color: var(--gold);
+      font-weight: 600;
+    }
+
+    /* ── zellige tile ── */
+    .zellige {
+      background-color: var(--dark);
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60' viewBox='0 0 60 60'%3E%3Cg fill='none' stroke='%23d4af37' stroke-width='0.55' opacity='0.14'%3E%3Cpolygon points='30,2 36,15 49,9 43,22 56,28 43,34 49,47 36,41 30,54 24,41 11,47 17,34 4,28 17,22 11,9 24,15'/%3E%3Crect x='18' y='18' width='24' height='24' transform='rotate(45 30 30)'/%3E%3Ccircle cx='30' cy='30' r='5'/%3E%3C/g%3E%3C/svg%3E");
+    }
+
+    /* ── navbar ── */
+    .navbar {
+      position: fixed; inset: 0 0 auto;
+      z-index: 100;
+      background: transparent;
+      backdrop-filter: none;
+      -webkit-backdrop-filter: none;
+      border-bottom: 1px solid transparent;
+      transition: background .35s ease, backdrop-filter .35s ease,
+                  -webkit-backdrop-filter .35s ease, border-color .35s ease,
+                  box-shadow .35s ease;
+    }
+    .navbar.scrolled {
+      background: rgba(10,21,32,0.82);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+      border-bottom: 1px solid rgba(212,175,55,0.14);
+      box-shadow: 0 4px 32px rgba(0,0,0,.45);
+    }
+
+    /* Logo gold glow on hover / always subtle */
+    .logo-title  { text-shadow: 0 0 18px rgba(212,175,55,.35); }
+    .logo-sub    { text-shadow: 0 0 10px rgba(212,175,55,.2); }
+
+    /* ── hero section ── */
+    #explorer {
+      background-image: url('section 1 .png');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      /* lock for mobile — no stretch */
+      background-attachment: scroll;
+    }
+    @media (max-width: 640px) {
+      #explorer {
+        background-position: center center;
+        background-size: cover;
+      }
+    }
+
+    /* ── hero overlay — neutral dark, no blue cast ── */
+    .hero-overlay {
+      background: linear-gradient(
+        180deg,
+        rgba(0,0,0,0.30) 0%,
+        rgba(0,0,0,0.55) 50%,
+        rgba(0,0,0,0.80) 100%
+      );
+    }
+
+    /* ── hero titles ── */
+    .hero-title {
+      text-shadow: 2px 2px 10px rgba(0,0,0,0.8);
+    }
+    /* gold outer glow on the first line only */
+    .hero-title-glow {
+      text-shadow:
+        2px 2px 10px rgba(0,0,0,0.85),
+        0 0 28px rgba(212,175,55,0.30),
+        0 0 55px rgba(212,175,55,0.14);
+    }
+
+    /* ── search bar — neutral glass / gold border ── */
+    .search-wrap {
+      background: rgba(0,0,0,0.40) !important;
+      border: 1.5px solid rgba(212,175,55,0.45) !important;
+      backdrop-filter: blur(14px) saturate(140%);
+      -webkit-backdrop-filter: blur(14px) saturate(140%);
+      box-shadow: 0 4px 24px rgba(0,0,0,.35), 0 0 0 1px rgba(212,175,55,.06) inset;
+    }
+    .search-wrap:focus-within {
+      border-color: var(--gold) !important;
+      box-shadow: 0 0 0 3px rgba(212,175,55,.18), 0 4px 24px rgba(0,0,0,.4) !important;
+    }
+
+    /* ── Rechercher button ── */
+    .btn-rechercher {
+      background: linear-gradient(135deg, var(--gold), var(--gold-l));
+      color: #0a1520; font-weight: 700;
+      border-radius: 9999px;
+      border: none; cursor: pointer;
+      transition: background .28s ease, box-shadow .25s ease, transform .15s ease;
+    }
+    .btn-rechercher:hover {
+      background: linear-gradient(135deg, #b8952e, #c9a832);
+      box-shadow: 0 0 20px rgba(212,175,55,.55), 0 4px 18px rgba(212,175,55,.28);
+      transform: scale(1.04);
+    }
+
+    /* ── arch deco ── */
+    .arch {
+      position: absolute; pointer-events: none;
+      border: 1.5px solid rgba(212,175,55,0.10);
+      border-radius: 140px 140px 0 0;
+      width: 260px; height: 360px;
+    }
+
+    /* ── search ── */
+    .search-wrap {
+      background: rgba(255,255,255,0.04);
+      border: 1.5px solid rgba(212,175,55,0.32);
+      border-radius: 9999px;
+      transition: border-color .25s, box-shadow .25s;
+    }
+    .search-wrap:focus-within {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 3px rgba(212,175,55,0.16);
+    }
+    .search-wrap input {
+      background: transparent; color: #fff;
+      font-family: 'Inter', sans-serif;
+    }
+    .search-wrap input::placeholder { color: rgba(255,255,255,0.38); }
+    .search-wrap input:focus { outline: none; }
+
+    /* ── stat cards — neutral glass ── */
+    .stat-card {
+      background: rgba(0,0,0,0.38);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      border: 1px solid rgba(212,175,55,0.22);
+      border-radius: 12px;
+      padding: .9rem 1.4rem;
+      text-align: center; flex: 1; min-width: 80px;
+    }
+
+    /* ── pills (hero) ── */
+    .pill {
+      cursor: pointer;
+      border: 1px solid rgba(212,175,55,0.32);
+      border-radius: 9999px;
+      transition: all .2s;
+      color: rgba(255,255,255,0.7);
+      font-size: .82rem; font-weight: 500;
+      padding: .42rem 1rem;
+      white-space: nowrap;
+      display: inline-flex; align-items: center; gap: .4rem;
+    }
+    .pill:hover, .pill.active { background: var(--gold); border-color: var(--gold); color: #0a1520; }
+
+    /* ── primary button ── */
+    .btn-gold {
+      background: linear-gradient(135deg, var(--gold), var(--gold-l));
+      color: #0a1520; font-weight: 700;
+      border-radius: 9999px;
+      transition: opacity .2s, transform .15s;
+      cursor: pointer;
+    }
+    .btn-gold:hover {
+      opacity: .92;
+      transform: scale(1.04);
+      box-shadow: 0 0 18px rgba(212,175,55,.55), 0 4px 20px rgba(212,175,55,.25);
+    }
+
+    /* ── outline button ── */
+    .btn-outline {
+      border: 1px solid rgba(212,175,55,0.42);
+      color: var(--gold-l);
+      border-radius: 9999px;
+      background: transparent;
+      transition: all .2s; cursor: pointer;
+    }
+    .btn-outline:hover { background: rgba(212,175,55,0.1); border-color: var(--gold); }
+
+    /* ══════════════════════
+       DIRECTORY SECTION
+    ══════════════════════ */
+
+    /* ── nav links ── */
+    .nav-link {
+      position: relative;
+      padding-bottom: 3px;
+      font-size: .875rem;
+      font-weight: 500;
+      letter-spacing: .01em;
+      color: rgba(255,255,255,.55);
+      transition: color .22s ease, letter-spacing .22s ease;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute; left: 50%; bottom: -1px;
+      transform: translateX(-50%);
+      width: 0; height: 1.5px;
+      background: linear-gradient(90deg, var(--gold), var(--gold-l));
+      border-radius: 9999px;
+      transition: width .3s cubic-bezier(.25,.8,.25,1);
+    }
+    .nav-link:hover {
+      color: var(--gold) !important;
+      letter-spacing: .03em;
+    }
+    .nav-link:hover::after { width: 110%; }
+    .nav-link.active { color: var(--gold) !important; letter-spacing: .03em; }
+    .nav-link.active::after { width: 110%; }
+
+    /* ── fast-food sub filter ── */
+    .fftag {
+      cursor: pointer;
+      padding: .35rem 1rem;
+      border-radius: 9999px;
+      border: 1px solid rgba(212,175,55,.22);
+      color: rgba(255,255,255,.45);
+      font-size: .78rem; font-weight: 500;
+      background: transparent;
+      transition: all .2s;
+    }
+    .fftag:hover { border-color: var(--gold); color: var(--gold); }
+    .fftag.active {
+      background: var(--gold);
+      color: #0a1520;
+      border-color: var(--gold);
+      font-weight: 700;
+    }
+
+    /* ── image slider ── */
+    .ff-slider { width:100%; height:100%; }
+    .ff-prev, .ff-next {
+      position:absolute; top:50%; transform:translateY(-50%);
+      background:rgba(0,0,0,.55); border:none; color:#d4af37;
+      font-size:1.6rem; line-height:1; width:32px; height:32px;
+      border-radius:50%; cursor:pointer; z-index:10;
+      display:flex; align-items:center; justify-content:center;
+      transition:background .2s;
+    }
+    .ff-prev:hover, .ff-next:hover { background:rgba(212,175,55,.75); color:#0a1520; }
+    .ff-prev { left:8px; }
+    .ff-next { right:8px; }
+    .ff-dots {
+      position:absolute; bottom:8px; left:50%; transform:translateX(-50%);
+      display:flex; gap:5px; z-index:10;
+    }
+    .ff-dot {
+      width:6px; height:6px; border-radius:50%;
+      background:rgba(255,255,255,.4); transition:background .2s;
+    }
+    .ff-dot.active { background:#d4af37; }
+
+    /* ── sticky filter bar ── */
+    #filterBar {
+      position: sticky;
+      top: 64px; /* height of navbar */
+      z-index: 50;
+      background: rgba(10,21,32,0.82);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(212,175,55,0.1);
+      padding: .75rem 1rem;
+      margin-left: -1.25rem;
+      margin-right: -1.25rem;
+      border-radius: 0;
+      transition: box-shadow .3s;
+    }
+    #filterBar.scrolled {
+      box-shadow: 0 4px 32px rgba(0,0,0,.5);
+    }
+
+    /* filter tabs */
+    .ftab {
+      cursor: pointer;
+      padding: .5rem 1.3rem;
+      border-radius: 9999px;
+      border: 1px solid rgba(212,175,55,0.22);
+      color: rgba(255,255,255,0.5);
+      font-size: .82rem; font-weight: 500;
+      transition: all .22s;
+      white-space: nowrap;
+    }
+    .ftab:hover { color: #fff; border-color: rgba(212,175,55,0.55); }
+    .ftab.active {
+      background: linear-gradient(135deg, var(--gold), var(--gold-l));
+      border-color: transparent; color: #0a1520; font-weight: 700;
+    }
+
+    /* ── card entrance animation ── */
+    @keyframes cardSlideUp {
+      from { opacity: 0; transform: translateY(32px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+    #grid-cafes .place-card, #grid-restaurants .place-card {
+      animation: cardSlideUp .55s ease both;
+    }
+    #grid-cafes .place-card:nth-child(1), #grid-restaurants .place-card:nth-child(1) { animation-delay: .05s; }
+    #grid-cafes .place-card:nth-child(2), #grid-restaurants .place-card:nth-child(2) { animation-delay: .13s; }
+    #grid-cafes .place-card:nth-child(3), #grid-restaurants .place-card:nth-child(3) { animation-delay: .21s; }
+    #grid-cafes .place-card:nth-child(4), #grid-restaurants .place-card:nth-child(4) { animation-delay: .29s; }
+    #grid-cafes .place-card:nth-child(5) { animation-delay: .37s; }
+    #grid-cafes .place-card:nth-child(6) { animation-delay: .45s; }
+
+    /* place card */
+    .place-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+      display: flex; flex-direction: column;
+      transition: transform .4s ease,
+                  box-shadow .4s ease,
+                  border-color .3s ease;
+    }
+    .place-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 32px 72px rgba(0,0,0,.7),
+                  0 0 40px rgba(212,175,55,.16),
+                  0 0 0 1px rgba(212,175,55,.22);
+      border-color: rgba(212,175,55,.5);
+    }
+    .place-card.hidden { display: none; }
+
+    /* card image */
+    .card-img {
+      position: relative; height: 200px; overflow: hidden;
+    }
+    .card-img img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: transform .5s ease;
+    }
+    .place-card:hover .card-img img { transform: scale(1.1); }
+
+    /* image badges — glassmorphism */
+    .badge-cat {
+      position: absolute; top: 10px; left: 10px;
+      font-size: .68rem; font-weight: 700;
+      padding: .3rem .8rem; border-radius: 9999px;
+      letter-spacing: .04em;
+      background: rgba(10,21,32,.72) !important;
+      color: #fff !important;
+      backdrop-filter: blur(10px) saturate(180%);
+      -webkit-backdrop-filter: blur(10px) saturate(180%);
+      border: 1px solid rgba(255,255,255,.15) !important;
+      box-shadow: 0 2px 12px rgba(0,0,0,.4);
+    }
+    .badge-status {
+      position: absolute; top: 10px; right: 10px;
+      font-size: .66rem; font-weight: 600;
+      padding: .26rem .65rem; border-radius: 9999px;
+    }
+    .status-open   { background: rgba(16,185,129,.85); color: #fff; }
+    .status-closed { background: rgba(100,100,110,.8);  color: #ddd; }
+    .status-h24    { background: rgba(59,130,246,.85);  color: #fff; }
+    .status-rdv    { background: rgba(245,158,11,.85);  color: #0a1520; }
+
+    /* card body */
+    .card-body { padding: 1.1rem 1.3rem 1.3rem; flex: 1; display: flex; flex-direction: column; gap: .6rem; }
+
+    /* stars */
+    .stars { color: #FFD700; letter-spacing: .5px; font-size: 1rem; text-shadow: 0 0 6px rgba(255,215,0,.35); }
+    .rating { color: #FFD700; font-size: .8rem; font-weight: 800; }
+    .reviews-count { color: rgba(255,255,255,.35); font-size: .68rem; font-weight: 400; margin-left: .15rem; }
+
+    /* address */
+    .card-addr {
+      display: flex; align-items: flex-start; gap: .38rem;
+      color: rgba(255,255,255,0.38); font-size: .76rem; line-height: 1.4;
+    }
+    .card-addr svg { flex-shrink: 0; margin-top: 1px; }
+
+    /* card footer */
+    .card-foot { display: flex; align-items: center; gap: .55rem; margin-top: auto; padding-top: .6rem; }
+
+    .btn-map {
+      display: inline-flex; align-items: center; gap: .38rem;
+      background: linear-gradient(135deg, var(--gold), var(--gold-l));
+      color: #0a1520; font-size: .75rem; font-weight: 700;
+      padding: .5rem 1rem; border-radius: 9999px;
+      text-decoration: none; transition: opacity .2s, transform .15s;
+      white-space: nowrap;
+    }
+    .btn-map:hover {
+      opacity: .95;
+      transform: scale(1.05);
+      box-shadow: 0 0 16px rgba(212,175,55,.55), 0 4px 14px rgba(212,175,55,.3);
+    }
+
+    .btn-detail {
+      display: inline-flex; align-items: center;
+      border: 1px solid rgba(212,175,55,.35);
+      color: var(--gold-l); font-size: .75rem; font-weight: 500;
+      padding: .48rem .9rem; border-radius: 9999px;
+      text-decoration: none; background: transparent;
+      transition: all .2s; cursor: pointer;
+    }
+    .btn-detail:hover { background: rgba(212,175,55,.1); border-color: var(--gold); }
+
+    /* category section titles */
+    .cat-title {
+      display: flex; align-items: center; gap: .8rem;
+      margin-bottom: 1.5rem;
+    }
+    .cat-title h2 { margin: 0; padding: 0; font-size: 1.25rem; }
+    .cat-title-line { flex: 1; height: 1px; background: rgba(212,175,55,.15); }
+
+    /* ══════════════════════
+       FOOTER
+    ══════════════════════ */
+    footer {
+      background: linear-gradient(180deg, #04080f 0%, #060e16 60%, #030810 100%);
+      border-top: 1px solid rgba(212,175,55,.22);
+      position: relative;
+    }
+    /* top gold shimmer line */
+    footer::before {
+      content: '';
+      position: absolute; top: 0; left: 0; right: 0; height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), rgba(240,208,96,.6), var(--gold), transparent);
+    }
+    /* category quick-links */
+    .footer-cat-link {
+      display: flex; align-items: center; gap: .5rem;
+      color: rgba(255,255,255,.42); font-size: .82rem;
+      text-decoration: none; padding: .32rem 0;
+      transition: color .2s, gap .2s;
+    }
+    .footer-cat-link:hover { color: var(--gold); gap: .75rem; }
+    .footer-link {
+      color: rgba(255,255,255,.5); font-size: .85rem;
+      text-decoration: none; transition: color .2s;
+      display: block; margin-bottom: .5rem;
+    }
+    .footer-link:hover { color: var(--gold-l); }
+
+    .footer-input {
+      background: rgba(255,255,255,.05);
+      border: 1px solid rgba(212,175,55,.25);
+      border-radius: 9999px;
+      color: #fff; font-family: 'Inter', sans-serif;
+      font-size: .85rem; padding: .65rem 1.2rem; width: 100%;
+      outline: none; transition: border-color .2s;
+    }
+    .footer-input:focus { border-color: var(--gold); }
+    .footer-input::placeholder { color: rgba(255,255,255,.3); }
+
+    /* ── search suggestions ── */
+    .search-suggestion {
+      display: inline-flex; align-items: center; gap: .45rem;
+      padding: .38rem 1rem;
+      border-radius: 9999px;
+      border: 1px solid rgba(212,175,55,0.28);
+      background: rgba(0,0,0,0.32);
+      backdrop-filter: blur(8px);
+      color: rgba(255,255,255,.65);
+      font-size: .78rem; font-weight: 500;
+      cursor: pointer;
+      transition: all .22s ease;
+      white-space: nowrap;
+      text-decoration: none;
+    }
+    .search-suggestion:hover {
+      background: var(--gold);
+      border-color: var(--gold);
+      color: #0a1520;
+      font-weight: 700;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 20px rgba(212,175,55,.3);
+    }
+    .search-suggestion .sug-label {
+      font-size: .7rem;
+      color: rgba(255,255,255,.35);
+      transition: color .22s;
+    }
+    .search-suggestion:hover .sug-label { color: rgba(10,21,32,.6); }
+
+    /* scroll bounce — slow, eye-catching */
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0);    opacity: .55; }
+      50%       { transform: translateY(9px); opacity: 1;   }
+    }
+    .bounce { animation: bounce 2.4s cubic-bezier(.45,0,.55,1) infinite; }
+
+    @media (max-width:640px) { .arch { display:none; } }
+
+    /* ══════════════════════════════
+       LUXURY STAYS SECTION
+    ══════════════════════════════ */
+    #luxury-stays { background: #0d1e2e; }
+
+    .stay-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      overflow: hidden;
+      display: flex; flex-direction: column;
+      transition: transform .35s cubic-bezier(.25,.8,.25,1),
+                  box-shadow .35s ease, border-color .3s;
+      position: relative;
+    }
+    .stay-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 30px 70px rgba(0,0,0,.65), 0 0 32px rgba(212,175,55,.13);
+      border-color: rgba(212,175,55,.5);
+    }
+
+    .stay-img {
+      position: relative; height: 220px; overflow: hidden; flex-shrink: 0;
+    }
+    .stay-img img {
+      width: 100%; height: 100%; object-fit: cover; display: block;
+      transition: transform .45s ease;
+    }
+    .stay-card:hover .stay-img img { transform: scale(1.07); }
+
+    /* price badge top-right of image */
+    .stay-price-badge {
+      position: absolute; bottom: 12px; right: 12px;
+      background: rgba(10,21,32,.82);
+      border: 1px solid rgba(212,175,55,.55);
+      border-radius: 10px;
+      padding: .35rem .75rem;
+      backdrop-filter: blur(6px);
+    }
+
+    /* badge top-left */
+    .stay-badge {
+      position: absolute; top: 12px; left: 12px;
+      font-size: .65rem; font-weight: 800;
+      padding: .28rem .72rem;
+      border-radius: 9999px;
+      text-transform: uppercase; letter-spacing: .06em;
+      background: linear-gradient(135deg, var(--gold), var(--gold-l));
+      color: #0a1520;
+    }
+
+    .stay-body { padding: 1.1rem 1.3rem 1.3rem; flex: 1; display: flex; flex-direction: column; gap: .55rem; }
+
+    /* amenity chips */
+    .amenity-chip {
+      display: inline-flex; align-items: center; gap: .3rem;
+      font-size: .68rem; color: rgba(255,255,255,.45);
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.08);
+      border-radius: 6px; padding: .22rem .55rem;
+    }
+
+    /* skeleton loader */
+    .skeleton { animation: shimmer 1.5s infinite; border-radius: 10px; background: #1a2d40; }
+    @keyframes shimmer {
+      0%   { opacity: .55; }
+      50%  { opacity: .9; }
+      100% { opacity: .55; }
+    }
+
+    /* stay type filter */
+    .stab {
+      cursor: pointer; padding: .44rem 1.1rem;
+      border-radius: 9999px;
+      border: 1px solid rgba(212,175,55,.2);
+      color: rgba(255,255,255,.45);
+      font-size: .8rem; font-weight: 500;
+      transition: all .2s;
+    }
+    .stab:hover { color: #fff; border-color: rgba(212,175,55,.5); }
+    .stab.active {
+      background: linear-gradient(135deg, var(--gold), var(--gold-l));
+      border-color: transparent; color: #0a1520; font-weight: 700;
+    }
+
+    .line-clamp-2 { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }
+
+    /* ── Pharmacy cards ── */
+    .pharma-card {
+      background: var(--card-bg);
+      border: 1px solid rgba(16,185,129,0.2);
+      border-radius: 18px;
+      overflow: hidden;
+      display: flex; flex-direction: column;
+      transition: transform .35s cubic-bezier(.25,.8,.25,1),
+                  box-shadow .35s ease, border-color .3s;
+    }
+    .pharma-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 24px 56px rgba(0,0,0,.55), 0 0 24px rgba(16,185,129,.12);
+      border-color: rgba(16,185,129,.45);
+    }
+    .pharma-card.hidden { display: none; }
+
+    .pharma-img {
+      position:relative; height:220px; overflow:hidden;
+      border-radius:12px 12px 0 0;
+    }
+    .pharma-img img {
+      width:100%; height:100%; object-fit:cover; display:block;
+      transition:transform .5s ease;
+    }
+    .pharma-card:hover .pharma-img img { transform:scale(1.1); }
+    /* dark gradient overlay at bottom of image so titles pop */
+    .pharma-img::after {
+      content:'';
+      position:absolute; inset:auto 0 0 0; height:60px;
+      background:linear-gradient(to top, rgba(10,21,32,.85), transparent);
+      pointer-events:none;
+    }
+
+    /* green cross overlay bottom-left — with live pulse */
+    @keyframes crossPulse {
+      0%, 100% { box-shadow: 0 0 0 0 rgba(16,185,129,.7); }
+      60%       { box-shadow: 0 0 0 8px rgba(16,185,129,0); }
+    }
+    .cross-badge {
+      position:absolute; bottom:10px; left:10px;
+      width:36px; height:36px; border-radius:50%;
+      background:rgba(5,150,105,.92);
+      display:flex; align-items:center; justify-content:center;
+      backdrop-filter:blur(4px);
+      border:1.5px solid rgba(255,255,255,.25);
+      animation: crossPulse 2s ease-in-out infinite;
+    }
+
+    .pharma-body { padding:1rem 1.2rem 1.2rem; flex:1; display:flex; flex-direction:column; gap:.55rem; }
+
+    /* Arabic name */
+    .name-ar {
+      direction:rtl; font-size:.95rem;
+      color:rgba(255,255,255,.55);
+      font-family:'Playfair Display', serif;
+      letter-spacing:.02em;
+      line-height:1.4;
+      margin-top:.1rem;
+    }
+    /* name row: English + Arabic balanced */
+    .pharma-name-row {
+      display:flex; flex-direction:column; gap:.18rem;
+    }
+
+    /* phone link */
+    .tel-link {
+      display:inline-flex; align-items:center; gap:.4rem;
+      color:rgba(16,185,129,.9); font-size:.78rem; font-weight:600;
+      text-decoration:none; transition:color .2s;
+    }
+    .tel-link:hover { color:#34d399; }
+
+    /* pharmacy open badge */
+    .pharma-open {
+      position:absolute; top:10px; right:10px;
+      font-size:.66rem; font-weight:700;
+      padding:.26rem .65rem; border-radius:9999px;
+      letter-spacing:.04em;
+    }
+    /* 24h/24 blink pulse */
+    @keyframes badge24Pulse {
+      0%, 100% { background:rgba(59,130,246,.95); color:#fff; box-shadow:0 0 0 0 rgba(59,130,246,.7); }
+      50%       { background:rgba(255,255,255,.95); color:#1d4ed8; box-shadow:0 0 0 7px rgba(59,130,246,0); }
+    }
+    .badge-24h {
+      animation: badge24Pulse 2.4s ease-in-out infinite;
+    }
+
+    /* sort select */
+    .sort-select {
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(212,175,55,.22);
+      color: rgba(255,255,255,.6);
+      border-radius: 9999px;
+      padding: .44rem 1rem;
+      font-size: .8rem; font-family: 'Inter', sans-serif;
+      outline: none; cursor: pointer;
+      transition: border-color .2s;
+    }
+    .sort-select:focus { border-color: var(--gold); }
+    .sort-select option { background: #0d1e2e; color: #fff; }
+
+    /* last-updated bar */
+    .updated-bar {
+      background: rgba(212,175,55,.06);
+      border: 1px solid rgba(212,175,55,.14);
+      border-radius: 10px; padding: .55rem 1rem;
+      display: flex; align-items: center; gap: .5rem;
+      font-size: .75rem; color: rgba(255,255,255,.4);
+    }
+  </style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════
+     NAVBAR
+═══════════════════════════════════ -->
+<nav class="navbar px-5 py-3 flex items-center justify-between">
+
+  <!-- Logo -->
+  <a href="#" class="flex items-center gap-3">
+    <svg width="38" height="38" viewBox="0 0 80 80" fill="none">
+      <polygon points="40,4 47,28 70,20 54,40 70,60 47,52 40,76 33,52 10,60 26,40 10,20 33,28"
+        fill="none" stroke="#d4af37" stroke-width="2"/>
+      <rect x="26" y="26" width="28" height="28" rx="2" transform="rotate(45 40 40)"
+        fill="none" stroke="#f0d060" stroke-width="1.5"/>
+      <circle cx="40" cy="40" r="7" fill="#d4af37" opacity=".9"/>
+      <circle cx="40" cy="40" r="4" fill="#0a1520"/>
+    </svg>
+    <div class="leading-tight">
+      <div class="font-playfair text-lg font-bold gold-gradient logo-title">Hay Riad</div>
+      <div class="text-xs text-gray-500 tracking-widest uppercase logo-sub">Rabat · Guide</div>
+    </div>
+  </a>
+
+  <!-- Links -->
+  <div class="hidden md:flex items-center gap-8 text-sm text-gray-400">
+    <a href="#explorer"     class="nav-link hover:text-yellow-400 transition-colors" data-section="explorer">Explore</a>
+    <a href="#directory"    class="nav-link hover:text-yellow-400 transition-colors" data-section="directory">Directory</a>
+    <a href="#luxury-stays" class="nav-link hover:text-yellow-400 transition-colors" data-section="luxury-stays">Luxury Stays</a>
+    <a href="#footer"       class="nav-link hover:text-yellow-400 transition-colors" data-section="footer">Contact</a>
+  </div>
+
+  <button class="btn-gold hidden md:flex items-center gap-2 px-5 py-2 text-sm" onclick="document.getElementById('footer').scrollIntoView({behavior:'smooth'})">
+    + Add a Place
+  </button>
+
+  <button class="md:hidden text-gray-400" id="menuBtn" aria-label="Menu">
+    <svg width="22" height="22" fill="none" stroke="currentColor" stroke-width="2">
+      <line x1="3" y1="6"  x2="19" y2="6"/>
+      <line x1="3" y1="11" x2="19" y2="11"/>
+      <line x1="3" y1="16" x2="19" y2="16"/>
+    </svg>
+  </button>
+</nav>
+
+<!-- Mobile menu -->
+<div id="mobileMenu" class="hidden fixed inset-0 z-50 flex flex-col bg-[#060e16] pt-20 px-8 gap-6 text-lg">
+  <button class="absolute top-5 right-6 text-gray-400" onclick="document.getElementById('mobileMenu').classList.add('hidden')">✕</button>
+  <a href="#explorer" class="text-white hover:text-yellow-400" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Explore</a>
+  <a href="#directory" class="text-white hover:text-yellow-400" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Directory</a>
+  <a href="#footer" class="text-white hover:text-yellow-400" onclick="document.getElementById('mobileMenu').classList.add('hidden')">Contact</a>
+  <button class="btn-gold px-6 py-3 text-base w-fit">+ Add a Place</button>
+</div>
+
+
+<!-- ═══════════════════════════════════
+     HERO SECTION
+═══════════════════════════════════ -->
+<section id="explorer" class="relative min-h-screen flex flex-col items-center justify-center overflow-hidden pt-20 pb-16">
+
+  <div class="hero-overlay absolute inset-0 pointer-events-none"></div>
+
+  <!-- Arch decorations -->
+  <div class="arch" style="top:6%; left:-55px;"></div>
+  <div class="arch" style="bottom:-30px; right:-55px; transform:scaleX(-1);"></div>
+
+  <!-- Corner filigree -->
+  <svg class="absolute top-24 left-5 opacity-20" width="55" height="55" viewBox="0 0 60 60" fill="none">
+    <path d="M0 60 Q0 0 60 0" stroke="#d4af37" stroke-width="1.2" fill="none"/>
+    <path d="M0 60 Q10 10 60 10" stroke="#d4af37" stroke-width=".8" fill="none"/>
+    <path d="M10 60 Q10 20 60 20" stroke="#d4af37" stroke-width=".5" fill="none"/>
+  </svg>
+  <svg class="absolute top-24 right-5 opacity-20" width="55" height="55" viewBox="0 0 60 60" fill="none" style="transform:scaleX(-1)">
+    <path d="M0 60 Q0 0 60 0" stroke="#d4af37" stroke-width="1.2" fill="none"/>
+    <path d="M0 60 Q10 10 60 10" stroke="#d4af37" stroke-width=".8" fill="none"/>
+    <path d="M10 60 Q10 20 60 20" stroke="#d4af37" stroke-width=".5" fill="none"/>
+  </svg>
+
+  <div class="relative z-10 w-full max-w-3xl mx-auto px-5 flex flex-col items-center text-center gap-7">
+
+    <!-- Pill badge -->
+    <div class="flex items-center gap-2 px-4 py-1.5 rounded-full text-xs font-semibold tracking-widest uppercase"
+         style="border:1px solid rgba(212,175,55,.32); color:var(--gold-l); background:rgba(212,175,55,.07);">
+      <span style="width:7px;height:7px;border-radius:50%;background:var(--gold);display:inline-block;"></span>
+      Rabat — Hay Riad
+    </div>
+
+    <!-- Headline — single H1 for correct SEO -->
+    <h1 class="font-playfair text-4xl sm:text-5xl md:text-[3.6rem] font-bold leading-tight hero-title hero-title-glow" style="margin:0;">
+      <span class="text-white block">Experience Hay Riad</span>
+      <span class="gold-gradient block">Like a Local</span>
+    </h1>
+
+    <p class="text-gray-400 text-base sm:text-lg leading-relaxed max-w-lg font-light">
+      Gourmet restaurants, 24h pharmacies, supermarkets &amp; local services — the ultimate prestige guide to Rabat's finest district.
+    </p>
+
+    <div class="gold-rule w-20"></div>
+
+    <!-- Search bar -->
+    <div class="w-full max-w-2xl">
+      <div class="search-wrap flex items-center px-5 py-3 gap-3">
+        <svg class="flex-shrink-0 opacity-60" width="19" height="19" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="11" cy="11" r="7"/><line x1="16.5" y1="16.5" x2="22" y2="22"/>
+        </svg>
+        <input type="text" id="searchInput" class="flex-1 text-base py-0.5"
+          placeholder="Search restaurants, pharmacies, shops…"/>
+        <button class="btn-rechercher px-5 py-2 text-sm hidden sm:block" onclick="runSearch()">Search</button>
+      </div>
+      <button class="btn-rechercher w-full mt-3 py-3 text-sm sm:hidden rounded-2xl" onclick="runSearch()">Search</button>
+
+      <!-- Search suggestions -->
+      <div class="flex flex-wrap justify-center gap-2 mt-3">
+        <span class="text-xs text-gray-600 self-center mr-1">Quick search:</span>
+        <a class="search-suggestion" href="#directory"
+           onclick="document.querySelector('[data-filter=restaurants]').click();document.getElementById('directory').scrollIntoView({behavior:'smooth'})">
+          🍽️ Restaurants
+          <span class="sug-label">gourmet dining</span>
+        </a>
+        <a class="search-suggestion" href="#directory"
+           onclick="document.querySelector('[data-filter=sante]').click();document.getElementById('directory').scrollIntoView({behavior:'smooth'})">
+          🩺 Health
+          <span class="sug-label">pharmacies</span>
+        </a>
+        <a class="search-suggestion" href="#directory"
+           onclick="document.querySelector('[data-filter=shopping]').click();document.getElementById('directory').scrollIntoView({behavior:'smooth'})">
+          🛒 Shopping
+          <span class="sug-label">supermarkets</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- Quick-filter pills -->
+    <div class="flex flex-wrap justify-center gap-2">
+      <button class="pill active" data-q="restaurant">🍽 Restaurants</button>
+      <button class="pill" data-q="cafe">☕ Cafés</button>
+      <button class="pill" data-q="pharmacie">🩺 Pharmacies</button>
+      <button class="pill" data-q="immobilier">🏡 Real Estate</button>
+      <button class="pill" data-q="shopping">🛒 Shopping</button>
+    </div>
+
+    <!-- Stats -->
+    <div class="flex gap-3 w-full max-w-md">
+      <div class="stat-card">
+        <div class="font-playfair text-2xl gold-gradient font-bold">200+</div>
+        <div class="text-xs text-gray-500 mt-0.5">Listings</div>
+      </div>
+      <div class="stat-card">
+        <div class="font-playfair text-2xl gold-gradient font-bold">8</div>
+        <div class="text-xs text-gray-500 mt-0.5">Categories</div>
+      </div>
+      <div class="stat-card">
+        <div class="font-playfair text-2xl gold-gradient font-bold">4.7★</div>
+        <div class="text-xs text-gray-500 mt-0.5">Avg. Rating</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Scroll cue -->
+  <div class="absolute bottom-7 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 bounce">
+    <span class="text-xs text-gray-400 tracking-widest uppercase">Explore</span>
+    <svg width="15" height="15" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24">
+      <polyline points="6 9 12 15 18 9"/>
+    </svg>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════
+     DIRECTORY SECTION
+═══════════════════════════════════ -->
+<section id="directory" class="py-20 px-5">
+  <div class="max-w-6xl mx-auto">
+
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <p class="section-label mb-2">Complete Directory</p>
+      <h2 class="font-playfair text-4xl sm:text-5xl font-bold text-white mb-3">
+        Explore <span class="gold-gradient">the District</span>
+      </h2>
+      <p class="text-gray-500 text-sm max-w-md mx-auto">Verified addresses, ratings and direct links to Google Maps.</p>
+      <div class="gold-rule w-16 mx-auto mt-5"></div>
+    </div>
+
+    <!-- Filter bar -->
+    <div class="flex flex-wrap justify-center gap-2 mb-12" id="filterBar">
+      <button class="ftab active" data-filter="all">View All</button>
+      <button class="ftab" data-filter="cafes">☕ Cafés &amp; Coffee</button>
+      <button class="ftab" data-filter="restaurants">🍽️ Restaurants</button>
+      <button class="ftab" data-filter="fastfood">🍔 Fast Food &amp; Gourmet</button>
+      <button class="ftab" data-filter="sante">🩺 Health</button>
+      <button class="ftab" data-filter="immo">🏡 Real Estate</button>
+      <button class="ftab" data-filter="telecom">📱 Telecom</button>
+      <button class="ftab" data-filter="shopping">🛒 Shopping</button>
+    </div>
+
+    <!-- ══ CAFÉS & SPECIALTY COFFEE ══ -->
+    <div id="group-cafes" class="mb-14">
+      <div class="cat-title">
+        <h2 class="font-playfair text-xl text-white">☕ Cafés &amp; Specialty Coffee — Hay Riad</h2>
+        <div class="cat-title-line"></div>
+        <span class="section-label text-xs">4 listings</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="grid-cafes">
+
+        <!-- The Brunch Café -->
+        <div class="place-card" data-cat="cafes">
+          <div class="card-img">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/10/c5/fb/7f/match-maroc.jpg?w=1200&h=-1&s=1"
+              onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1511920170033-f8396924c348?w=1920&q=95'"
+              alt="The Brunch Café Hay Riad Rabat - meilleur café brunch Annakhil"/>
+            <span class="badge-cat" style="background:rgba(251,146,60,.9);color:#fff;">🍳 Brunch</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">The Brunch Café</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★</span><span style="color:#555;font-size:.88rem;">★</span>
+                <span class="rating">4.2</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">
+              The go-to spot for weekend brunch — relaxed atmosphere, Instagram-worthy décor and generous portions.
+            </p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              8 Av. Annakhil, Rabat
+            </div>
+            <a href="tel:0537713434" class="tel-link">
+              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 4.46 6.18 2 2 0 0 1 6.44 4h3a2 2 0 0 1 2 1.72c.127.96.361 1.9.7 2.81a2 2 0 0 1-.45 2.11L10.09 12a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.339 1.85.573 2.81.7A2 2 0 0 1 24 19z"/></svg>
+              05 37 71 34 34
+            </a>
+            <div class="card-foot">
+              <a href="https://www.google.com/maps/search/The+Brunch+Café+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Caribou Coffee -->
+        <div class="place-card" data-cat="cafes">
+          <div class="card-img">
+            <img src="caribou.png" alt="Caribou Coffee Hay Riad Rabat - café specialty coffee meilleur quartier Rabat"/>
+            <span class="badge-cat" style="background:rgba(120,53,15,.9);color:#fde68a;">☕ Café</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Caribou Coffee</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★</span><span style="color:#555;font-size:.88rem;">★</span>
+                <span class="rating">4.1</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">
+              Light and fast, strong WiFi (great for remote work), and generous cups of quality coffee.
+            </p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Rue Al-Araar, Secteur 13, Rabat
+            </div>
+            <a href="tel:0537571111" class="tel-link">
+              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 4.46 6.18 2 2 0 0 1 6.44 4h3a2 2 0 0 1 2 1.72c.127.96.361 1.9.7 2.81a2 2 0 0 1-.45 2.11L10.09 12a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.339 1.85.573 2.81.7A2 2 0 0 1 24 19z"/></svg>
+              05 37 57 11 11
+            </a>
+            <div class="card-foot">
+              <a href="https://www.google.com/maps/search/Caribou+Coffee+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Between Friends Café -->
+        <div class="place-card" data-cat="cafes">
+          <div class="card-img">
+            <img src="Between Friends.png" alt="Between Friends Café Hay Riad Rabat - café cosy services de proximité"/>
+            <span class="badge-cat" style="background:rgba(251,146,60,.9);color:#fff;">☕ Café</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Between Friends Café</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★</span><span style="color:#555;font-size:.88rem;">★</span>
+                <span class="rating">4.2</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">
+              Warm and welcoming ambiance — perfect for catching up with friends over affordable, quality drinks.
+            </p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Avenue Al-Araar, Rabat
+            </div>
+            <a href="tel:0537563172" class="tel-link">
+              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 4.46 6.18 2 2 0 0 1 6.44 4h3a2 2 0 0 1 2 1.72c.127.96.361 1.9.7 2.81a2 2 0 0 1-.45 2.11L10.09 12a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.339 1.85.573 2.81.7A2 2 0 0 1 24 19z"/></svg>
+              05 37 56 31 72
+            </a>
+            <div class="card-foot">
+              <a href="https://www.google.com/maps/search/Between+Friends+Café+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Les Cafés Dubois -->
+        <div class="place-card" data-cat="cafes">
+          <div class="card-img">
+            <img src="https://images.unsplash.com/photo-1442512595331-e89e73853f31?w=1920&q=95"
+              onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=1920&q=95'"
+              alt="Les Cafés Dubois"/>
+            <span class="badge-cat" style="background:rgba(161,100,8,.9);color:#fff;">☕ Artisanal</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Les Cafés Dubois</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★</span><span style="color:#555;font-size:.88rem;">★</span>
+                <span class="rating">4.0</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">
+              French-style artisan roastery — exceptional single-origin beans and a refined, authentic café experience.
+            </p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Av. Annakhil, Centre Ryad 1, Rabat
+            </div>
+            <a href="tel:0537710332" class="tel-link">
+              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 4.46 6.18 2 2 0 0 1 6.44 4h3a2 2 0 0 1 2 1.72c.127.96.361 1.9.7 2.81a2 2 0 0 1-.45 2.11L10.09 12a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.339 1.85.573 2.81.7A2 2 0 0 1 24 19z"/></svg>
+              05 37 71 03 32
+            </a>
+            <div class="card-foot">
+              <a href="https://www.google.com/maps/search/Les+Cafés+Dubois+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /grid-cafes -->
+    </div>
+
+    <!-- ══ GOURMET RESTAURANTS ══ -->
+    <div id="group-restaurants" class="mb-14">
+      <div class="cat-title">
+        <h2 class="font-playfair text-xl text-white">🍽️ Gourmet Restaurants — Hay Riad Rabat</h2>
+        <div class="cat-title-line"></div>
+        <span class="section-label text-xs">4 listings</span>
+      </div>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="grid-restaurants">
+
+        <!-- Muskaan -->
+        <div class="place-card" data-cat="restaurants">
+          <div class="card-img" style="height:250px;position:relative;overflow:hidden;">
+            <div class="ff-slider" data-index="0">
+              <img src="Muskaan 1.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=95'" alt="Muskaan Restaurant Hay Riad Rabat - مطعم مسكان - Mediterranean gourmet dining" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+            </div>
+            <button class="ff-prev" onclick="ffSlide(this,-1)" aria-label="Prev">&#8249;</button>
+            <button class="ff-next" onclick="ffSlide(this,1)" aria-label="Next">&#8250;</button>
+            <span class="badge-cat" style="background:rgba(212,175,55,.2);color:#d4af37;border:1px solid rgba(212,175,55,.5);">🕯️ Mediterranean</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Muskaan</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★</span><span style="color:#555;font-size:.88rem;">★</span>
+                <span class="rating">4.3</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">A prestige dining experience. Famous for its cosy fireplace and high-end Mediterranean cuisine — one of the finest tables in all of Rabat.</p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Av. Bouabid, Hay Riad, Rabat
+            </div>
+            <div class="card-foot">
+              <a href="https://www.google.com/maps/search/Muskaan+Restaurant+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Little Mamma -->
+        <div class="place-card" data-cat="restaurants">
+          <div class="card-img" style="height:250px;position:relative;overflow:hidden;">
+            <div class="ff-slider" data-index="0">
+              <img src="unnamed-13.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1920&q=95'" alt="Little Mamma Italian Restaurant Hay Riad Rabat - أفضل مطعم إيطالي الرباط - pizza gastronomique" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+            </div>
+            <button class="ff-prev" onclick="ffSlide(this,-1)" aria-label="Prev">&#8249;</button>
+            <button class="ff-next" onclick="ffSlide(this,1)" aria-label="Next">&#8250;</button>
+            <span class="badge-cat" style="background:rgba(212,175,55,.2);color:#d4af37;border:1px solid rgba(212,175,55,.5);">🍕 Italian</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Little Mamma</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★</span><span style="color:#555;font-size:.88rem;">★</span>
+                <span class="rating">4.4</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">Best Italian spot in Hay Riad. Neo-Neapolitan pizzas, vibrant chic atmosphere — the trendiest Italian address at Mahaj Ryad.</p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Mahaj Ryad, Hay Riad, Rabat
+            </div>
+            <div class="card-foot">
+              <a href="https://www.google.com/maps/search/Little+Mamma+Mahaj+Ryad+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Huna Food Hall -->
+        <div class="place-card" data-cat="restaurants">
+          <div class="card-img" style="height:250px;position:relative;overflow:hidden;">
+            <div class="ff-slider" data-index="0">
+              <img src="huna 1.jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1567521464027-f127ff144326?w=1920&q=95'" alt="Huna Food Hall Hay Riad Rabat - restaurant food hall prestige Rabat" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+            </div>
+            <button class="ff-prev" onclick="ffSlide(this,-1)" aria-label="Prev">&#8249;</button>
+            <button class="ff-next" onclick="ffSlide(this,1)" aria-label="Next">&#8250;</button>
+            <span class="badge-cat" style="background:rgba(212,175,55,.2);color:#d4af37;border:1px solid rgba(212,175,55,.5);">🌍 Food Hall</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Huna Food Hall</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★</span><span style="color:#555;font-size:.88rem;">★</span>
+                <span class="rating">4.2</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">Modern culinary hub — international cuisines under one elegant roof. The must-visit food destination at Ryad Center for variety and quality.</p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Ryad Center, Hay Riad, Rabat
+            </div>
+            <div class="card-foot">
+              <a href="https://www.google.com/maps/search/Huna+Food+Hall+Ryad+Center+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Matsuri -->
+        <div class="place-card" data-cat="restaurants">
+          <div class="card-img" style="height:250px;position:relative;overflow:hidden;">
+            <div class="ff-slider" data-index="0">
+              <img src="matsuri 1.png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=1920&q=95'" alt="Restaurant japonais Matsuri Hay Riad Rabat - sushi cuisine asiatique" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+            </div>
+            <button class="ff-prev" onclick="ffSlide(this,-1)" aria-label="Prev">&#8249;</button>
+            <button class="ff-next" onclick="ffSlide(this,1)" aria-label="Next">&#8250;</button>
+            <span class="badge-cat" style="background:rgba(212,175,55,.2);color:#d4af37;border:1px solid rgba(212,175,55,.5);">🍣 Japanese</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Matsuri</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★</span><span style="color:#555;font-size:.88rem;">★</span>
+                <span class="rating">3.9</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">Authentic conveyor-belt sushi in the heart of Mahaj. Quality Japanese ingredients, modern setting — a fresh and unique dining experience.</p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Mahaj Ryad, Hay Riad, Rabat
+            </div>
+            <div class="card-foot">
+              <a href="https://www.google.com/maps/search/Matsuri+Sushi+Mahaj+Ryad+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /grid-restaurants -->
+    </div>
+
+    <!-- ══ FAST FOOD & GOURMET ══ -->
+    <div id="group-fastfood" class="mb-14">
+      <div class="cat-title">
+        <h2 class="font-playfair text-xl text-white">🍔 Fast Food &amp; Gourmet — Hay Riad Rabat</h2>
+        <div class="cat-title-line"></div>
+        <span class="section-label text-xs">6 listings</span>
+      </div>
+
+      <!-- Fast-food sub-filter tags -->
+      <div class="flex flex-wrap gap-2 mb-7" id="ffTagBar">
+        <button class="fftag active" data-fftag="all">All</button>
+        <button class="fftag" data-fftag="burger">🍔 Burgers</button>
+        <button class="fftag" data-fftag="pizza">🍕 Pizza</button>
+        <button class="fftag" data-fftag="poke">🥗 Poké Bowls</button>
+        <button class="fftag" data-fftag="tacos">🌮 Tacos</button>
+        <button class="fftag" data-fftag="livraison">🛵 Quick Delivery</button>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" id="grid-fastfood">
+
+        <!-- Boca Chica -->
+        <div class="place-card" data-cat="fastfood" data-fftag="burger">
+          <div class="card-img" style="position:relative;overflow:hidden;">
+            <div class="ff-slider" data-index="0">
+              <img src="boca-chica1.png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1920&q=95'" alt="Boca Chica Hay Riad Rabat - burger fast food gourmet meilleur quartier Rabat" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+            </div>
+            <button class="ff-prev" onclick="ffSlide(this,-1)" aria-label="Prev">&#8249;</button>
+            <button class="ff-next" onclick="ffSlide(this,1)" aria-label="Next">&#8250;</button>
+            <span class="badge-cat" style="background:rgba(220,38,38,.9);color:#fff;">🍔 Gourmet Burger</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Boca Chica</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★</span><span style="color:#555;font-size:.88rem;">★</span>
+                <span class="rating">4.4</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">
+              Must-try: the signature brioche burger with 100% local wood-fired beef. Chic street-food vibe, open kitchen, industrial décor. The best artisan burger in Hay Riad — quality far above the average fast food.
+            </p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Hay Riad, Rabat
+            </div>
+            <div class="card-foot">
+              <a href="https://www.google.com/maps/search/Boca+Chica+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pizza Hut -->
+        <div class="place-card" data-cat="fastfood" data-fftag="pizza livraison">
+          <div class="card-img" style="position:relative;overflow:hidden;">
+            <div class="ff-slider" data-index="0">
+              <img src="Pizza Hut 1.png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=1920&q=95'" alt="Pizza Hut Hay Riad Rabat - pizza livraison fast food" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+            </div>
+            <button class="ff-prev" onclick="ffSlide(this,-1)" aria-label="Prev">&#8249;</button>
+            <button class="ff-next" onclick="ffSlide(this,1)" aria-label="Next">&#8250;</button>
+            <span class="badge-cat" style="background:rgba(220,38,38,.9);color:#fff;">🍕 Pizza</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Pizza Hut — Hay Riad</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★</span><span style="color:#555;font-size:.88rem;">★★</span>
+                <span class="rating">3.4</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">
+              Must-try: the Supreme Pan Pizza, thick crust loaded with toppings. Family-friendly dining room, great for groups. Best choice for reliable fast pizza delivery covering all of Hay Riad.
+            </p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Mahaj Riad, Hay Riad, Rabat
+            </div>
+            <a href="tel:+212537717878" class="tel-link">
+              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 4.46 6.18 2 2 0 0 1 6.44 4h3a2 2 0 0 1 2 1.72c.127.96.361 1.9.7 2.81a2 2 0 0 1-.45 2.11L10.09 12a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.339 1.85.573 2.81.7A2 2 0 0 1 24 19z"/></svg>
+              05 37 71 78 78
+            </a>
+            <div class="card-foot">
+              <a href="https://www.google.com/maps/search/Pizza+Hut+Mahaj+Riad+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Pokawa -->
+        <div class="place-card" data-cat="fastfood" data-fftag="poke">
+          <div class="card-img" style="position:relative;overflow:hidden;">
+            <div class="ff-slider" data-index="0">
+              <img src="Pokawa 1.png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1920&q=95'" alt="Pokawa Hay Riad Rabat - poke bowl restaurant healthy food" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+            </div>
+            <button class="ff-prev" onclick="ffSlide(this,-1)" aria-label="Prev">&#8249;</button>
+            <button class="ff-next" onclick="ffSlide(this,1)" aria-label="Next">&#8250;</button>
+            <span class="badge-cat" style="background:rgba(16,185,129,.9);color:#fff;">🥗 Poké Bowl</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Pokawa</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★★</span>
+                <span class="rating">4.5</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">
+              Must-try: the Salmon Avocado bowl with sushi rice, ponzu sauce and crispy toppings — fresh and perfectly balanced. Bright modern setting, relaxed healthy vibe. Hay Riad's only quality poké brand.
+            </p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Av. Annakhil, Imm. High Tech Hall A, 1er étage
+            </div>
+            <div class="card-foot">
+              <a href="https://www.google.com/maps/search/Pokawa+Avenue+Annakhil+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Domino's Pizza -->
+        <div class="place-card" data-cat="fastfood" data-fftag="pizza livraison">
+          <div class="card-img" style="position:relative;overflow:hidden;">
+            <div class="ff-slider" data-index="0">
+              <img src="Domino's Pizza 1.png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1920&q=95'" alt="Domino's Pizza Hay Riad Rabat - livraison pizza rapide" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+            </div>
+            <button class="ff-prev" onclick="ffSlide(this,-1)" aria-label="Prev">&#8249;</button>
+            <button class="ff-next" onclick="ffSlide(this,1)" aria-label="Next">&#8250;</button>
+            <span class="badge-cat" style="background:rgba(30,64,175,.9);color:#fff;">🍕 Fast Delivery</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Domino's Pizza</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★</span><span style="color:#555;font-size:.88rem;">★</span>
+                <span class="rating">3.8</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">
+              Must-try: the Pepperoni Passion on crispy crust — a classic for movie nights. Streamlined dine-in or order online in seconds. Best choice for late-night cravings with some of the fastest delivery in the district.
+            </p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              3 Mahaj Riad, Hay Riad, Rabat
+            </div>
+            <a href="tel:+212537710404" class="tel-link">
+              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 4.46 6.18 2 2 0 0 1 6.44 4h3a2 2 0 0 1 2 1.72c.127.96.361 1.9.7 2.81a2 2 0 0 1-.45 2.11L10.09 12a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.339 1.85.573 2.81.7A2 2 0 0 1 24 19z"/></svg>
+              05 37 71 04 04
+            </a>
+            <div class="card-foot">
+              <a href="https://maps.google.com/?cid=13463726945297097975" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- S-Tacos -->
+        <div class="place-card" data-cat="fastfood" data-fftag="tacos">
+          <div class="card-img" style="position:relative;overflow:hidden;">
+            <div class="ff-slider" data-index="0">
+              <img src="s tacos 1.png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=1920&q=95'" alt="S-Tacos Hay Riad Rabat - tacos fast food gourmet" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+            </div>
+            <button class="ff-prev" onclick="ffSlide(this,-1)" aria-label="Prev">&#8249;</button>
+            <button class="ff-next" onclick="ffSlide(this,1)" aria-label="Next">&#8250;</button>
+            <span class="badge-cat" style="background:rgba(245,158,11,.9);color:#0a1520;">🌮 Tacos</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">S-Tacos</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★</span><span style="color:#555;font-size:.88rem;">★</span>
+                <span class="rating">3.9</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">
+              Premium tacos destination inside Ryad Square mall. Known for crispy shells and generous fillings. Best choice for an upscale tacos experience in a modern, lively setting.
+            </p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Ryad Square, Hay Riad, Rabat
+            </div>
+            <div class="card-foot">
+              <a href="https://www.google.com/maps/search/S-Tacos+Ryad+Square+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Instafood Rabat -->
+        <div class="place-card" data-cat="fastfood" data-fftag="tacos burger">
+          <div class="card-img" style="position:relative;overflow:hidden;">
+            <div class="ff-slider" data-index="0">
+              <img src="Instafood Rabat – Tacos 1 .jpg" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=1920&q=95'" alt="Instafood Rabat Hay Riad - tacos kebab fast food livraison Rabat" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+            </div>
+            <button class="ff-prev" onclick="ffSlide(this,-1)" aria-label="Prev">&#8249;</button>
+            <button class="ff-next" onclick="ffSlide(this,1)" aria-label="Next">&#8250;</button>
+            <span class="badge-cat" style="background:rgba(220,38,38,.9);color:#fff;">🧀 Tacos &amp; Burgers</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Instafood Rabat</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★★</span>
+                <span class="rating">4.7</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">
+              The reference for loaded, cheesy tacos at Ryad 23. Specialises in generously stuffed tacos and giant cheese burgers — every dish is a visual feast. Best choice for a truly indulgent, Insta-worthy meal.
+            </p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Avenue Sophora, Ryad 23, Hay Riad
+            </div>
+            <div class="card-foot">
+              <a href="https://www.google.com/maps/search/Instafood+Rabat+Avenue+Sophora+Hay+Riad" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /grid-fastfood -->
+    </div>
+
+    <!-- ══ SANTÉ — PHARMACIES ══ -->
+    <div id="group-sante" class="mb-14">
+      <div class="cat-title">
+        <div class="flex items-center gap-3">
+          <!-- Green cross SVG -->
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none">
+            <rect width="28" height="28" rx="6" fill="rgba(5,150,105,0.15)" stroke="rgba(16,185,129,0.4)" stroke-width="1.2"/>
+            <rect x="11" y="5" width="6" height="18" rx="2" fill="#10b981"/>
+            <rect x="5" y="11" width="18" height="6" rx="2" fill="#10b981"/>
+          </svg>
+          <h2 class="font-playfair text-xl text-white">🩺 Health &amp; Pharmacies — Hay Riad Rabat</h2>
+        </div>
+        <div class="cat-title-line"></div>
+        <span class="section-label text-xs">7 listings</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- ── 1. Pharmacie RYAD ── -->
+        <div class="pharma-card" data-cat="sante">
+          <div class="pharma-img">
+            <img src="Pharmacie RYAD.png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1587854692152-cbe660dbbb88?w=1920&q=95'" alt="Pharmacie RYAD Hay Riad Rabat - صيدلية الرياض - pharmacie de garde 24h"/>
+            <div class="cross-badge">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none">
+                <rect x="6.5" y="1" width="5" height="16" rx="1.5" fill="white"/>
+                <rect x="1" y="6.5" width="16" height="5" rx="1.5" fill="white"/>
+              </svg>
+            </div>
+            <span class="pharma-open" style="background:rgba(5,150,105,.88);color:#fff;">Open</span>
+          </div>
+          <div class="pharma-body">
+            <div>
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Pharmacie RYAD</h3>
+              <p class="name-ar">صيدلية الرياض</p>
+            </div>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Carrefour Market Ryad 1, Av. Annakhil
+            </div>
+            <a href="tel:0537710681" class="tel-link">
+              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 4.46 6.18 2 2 0 0 1 6.44 4h3a2 2 0 0 1 2 1.72c.127.96.361 1.9.7 2.81a2 2 0 0 1-.45 2.11L10.09 12a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.339 1.85.573 2.81.7A2 2 0 0 1 24 19z"/></svg>
+              05 37 71 06 81
+            </a>
+            <div class="card-foot">
+              <a href="https://maps.google.com/?q=Pharmacie+RYAD+Carrefour+Annakhil+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 2. Pharmacie Anakhil ── -->
+        <div class="pharma-card" data-cat="sante">
+          <div class="pharma-img">
+            <img src="Pharmacie Anakhil.png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1471864190281-a93a3070b6de?w=1920&q=95'" alt="Pharmacie Anakhil Hay Riad Rabat - pharmacie de quartier Annakhil"/>
+            <div class="cross-badge">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="6.5" y="1" width="5" height="16" rx="1.5" fill="white"/><rect x="1" y="6.5" width="16" height="5" rx="1.5" fill="white"/></svg>
+            </div>
+            <span class="pharma-open" style="background:rgba(5,150,105,.88);color:#fff;">Open</span>
+          </div>
+          <div class="pharma-body">
+            <div>
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Pharmacie Anakhil</h3>
+              <p class="name-ar">صيدلية النخيل</p>
+            </div>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Rés. Zahrat Ryad (Derrière la Douane)
+            </div>
+            <a href="tel:0537714747" class="tel-link">
+              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 4.46 6.18 2 2 0 0 1 6.44 4h3a2 2 0 0 1 2 1.72c.127.96.361 1.9.7 2.81a2 2 0 0 1-.45 2.11L10.09 12a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.339 1.85.573 2.81.7A2 2 0 0 1 24 19z"/></svg>
+              05 37 71 47 47
+            </a>
+            <div class="card-foot">
+              <a href="https://maps.google.com/?q=Pharmacie+Anakhil+Zahrat+Ryad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 3. Pharmacie Ghayth ── -->
+        <div class="pharma-card" data-cat="sante">
+          <div class="pharma-img">
+            <img src="Pharmacie Ghayth.png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1563213126-a4273aed2016?w=1920&q=95'" alt="Pharmacie Ghayth Hay Riad Rabat - santé pharmacie de garde Rabat"/>
+            <div class="cross-badge">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="6.5" y="1" width="5" height="16" rx="1.5" fill="white"/><rect x="1" y="6.5" width="16" height="5" rx="1.5" fill="white"/></svg>
+            </div>
+            <span class="pharma-open" style="background:rgba(5,150,105,.88);color:#fff;">Open</span>
+          </div>
+          <div class="pharma-body">
+            <div>
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Pharmacie Ghayth</h3>
+              <p class="name-ar">صيدلية الغيث</p>
+            </div>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Av. Annakhil, Rés. Ryad Al Otors
+            </div>
+            <a href="tel:0537571572" class="tel-link">
+              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 4.46 6.18 2 2 0 0 1 6.44 4h3a2 2 0 0 1 2 1.72c.127.96.361 1.9.7 2.81a2 2 0 0 1-.45 2.11L10.09 12a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.339 1.85.573 2.81.7A2 2 0 0 1 24 19z"/></svg>
+              05 37 57 15 72
+            </a>
+            <div class="card-foot">
+              <a href="https://maps.google.com/?q=Pharmacie+Ghayth+Annakhil+Ryad+Al+Otors+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 4. Marjane Hay Riad Pharmacy ── -->
+        <div class="pharma-card" data-cat="sante">
+          <div class="pharma-img">
+            <img src="Marjane Hay Riad Pharmacy.png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1576602976047-174e57a47881?w=1920&q=95'" alt="Pharmacie Marjane Hay Riad Rabat - pharmacie hypermarché santé Rabat"/>
+            <div class="cross-badge">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="6.5" y="1" width="5" height="16" rx="1.5" fill="white"/><rect x="1" y="6.5" width="16" height="5" rx="1.5" fill="white"/></svg>
+            </div>
+            <span class="pharma-open" style="background:rgba(5,150,105,.88);color:#fff;">Open</span>
+          </div>
+          <div class="pharma-body">
+            <div>
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Marjane Hay Riad Pharmacy</h3>
+              <p class="name-ar">صيدلية مرجان حي الرياض</p>
+            </div>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Hyper Marjane, Hay Riad
+            </div>
+            <a href="tel:0537714456" class="tel-link">
+              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 4.46 6.18 2 2 0 0 1 6.44 4h3a2 2 0 0 1 2 1.72c.127.96.361 1.9.7 2.81a2 2 0 0 1-.45 2.11L10.09 12a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.339 1.85.573 2.81.7A2 2 0 0 1 24 19z"/></svg>
+              05 37 71 44 56
+            </a>
+            <div class="card-foot">
+              <a href="https://maps.google.com/?q=Pharmacie+Marjane+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 5. Pharmacie Kawtar Riad ── -->
+        <div class="pharma-card" data-cat="sante">
+          <div class="pharma-img">
+            <img src="Pharmacie Kawtar Riad.png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1550572017-edd951aa8ca1?w=1920&q=95'" alt="Pharmacie Kawtar Riad Hay Riad Rabat - pharmacie de garde meilleur quartier Rabat"/>
+            <div class="cross-badge">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="6.5" y="1" width="5" height="16" rx="1.5" fill="white"/><rect x="1" y="6.5" width="16" height="5" rx="1.5" fill="white"/></svg>
+            </div>
+            <span class="pharma-open" style="background:rgba(5,150,105,.88);color:#fff;">Open</span>
+          </div>
+          <div class="pharma-body">
+            <div>
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Pharmacie Kawtar Riad</h3>
+              <p class="name-ar">صيدلية كوثر الرياض</p>
+            </div>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Rue Soltan Aljabal, Secteur 13
+            </div>
+            <a href="tel:0537563638" class="tel-link">
+              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 4.46 6.18 2 2 0 0 1 6.44 4h3a2 2 0 0 1 2 1.72c.127.96.361 1.9.7 2.81a2 2 0 0 1-.45 2.11L10.09 12a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.339 1.85.573 2.81.7A2 2 0 0 1 24 19z"/></svg>
+              05 37 56 36 38
+            </a>
+            <div class="card-foot">
+              <a href="https://maps.google.com/?q=Pharmacie+Kawtar+Riad+Secteur+13+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 6. Al Araar Pharmacy ── -->
+        <div class="pharma-card" data-cat="sante" style="margin-bottom:1.75rem;">
+          <div class="pharma-img">
+            <img src="Al Araar Pharmacy.png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1559757148-5c350d0d3c56?w=1920&q=95'" alt="Pharmacie Al Araar Hay Riad Rabat - pharmacie de garde Avenue Al Araar"/>
+            <div class="cross-badge">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="6.5" y="1" width="5" height="16" rx="1.5" fill="white"/><rect x="1" y="6.5" width="16" height="5" rx="1.5" fill="white"/></svg>
+            </div>
+            <span class="pharma-open" style="background:rgba(5,150,105,.88);color:#fff;">Open</span>
+          </div>
+          <div class="pharma-body">
+            <div>
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Al Araar Pharmacy</h3>
+              <p class="name-ar">صيدلية العرعار</p>
+            </div>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Avenue Al Araar, Hay Riad
+            </div>
+            <a href="tel:0537710627" class="tel-link">
+              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 4.46 6.18 2 2 0 0 1 6.44 4h3a2 2 0 0 1 2 1.72c.127.96.361 1.9.7 2.81a2 2 0 0 1-.45 2.11L10.09 12a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.339 1.85.573 2.81.7A2 2 0 0 1 24 19z"/></svg>
+              05 37 71 06 27
+            </a>
+            <div class="card-foot">
+              <a href="https://maps.google.com/?q=Al+Araar+Pharmacy+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── 7. Pharmacie Mosquée Rabat ── -->
+        <div class="pharma-card" data-cat="sante">
+          <div class="pharma-img">
+            <img src="Pharmacie Mosquée Rabat.png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1584308666744-24d5c474f2ae?w=1920&q=95'" alt="Pharmacie Mosquée Hay Riad Rabat open 24/7 - صيدلية المسجد - pharmacie de garde 24h"/>
+            <div class="cross-badge">
+              <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><rect x="6.5" y="1" width="5" height="16" rx="1.5" fill="white"/><rect x="1" y="6.5" width="16" height="5" rx="1.5" fill="white"/></svg>
+            </div>
+            <span class="pharma-open badge-24h" style="font-weight:800;font-size:.75rem;letter-spacing:.05em;">24h/24</span>
+          </div>
+          <div class="pharma-body">
+            <div>
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Pharmacie Mosquée Rabat</h3>
+              <p class="name-ar">صيدلية مسجد الرباط</p>
+            </div>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              N° 5, Secteur 17, Allée Safsaf
+            </div>
+            <a href="tel:0537715085" class="tel-link">
+              <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 4.46 6.18 2 2 0 0 1 6.44 4h3a2 2 0 0 1 2 1.72c.127.96.361 1.9.7 2.81a2 2 0 0 1-.45 2.11L10.09 12a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.339 1.85.573 2.81.7A2 2 0 0 1 24 19z"/></svg>
+              05 37 71 50 85
+            </a>
+            <div class="card-foot">
+              <a href="https://maps.google.com/?q=Pharmacie+Mosquee+Secteur+17+Safsaf+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /grid-sante -->
+    </div>
+
+    <!-- ══ IMMOBILIER ══ -->
+    <div id="group-immo" class="mb-14">
+      <div class="cat-title">
+        <h2 class="font-playfair text-xl text-white">🏡 Real Estate &amp; Agencies — Hay Riad Rabat</h2>
+        <div class="cat-title-line"></div>
+        <span class="section-label text-xs">2 listings</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Century 21 -->
+        <div class="place-card" data-cat="immo">
+          <div class="card-img">
+            <img src="./images/century21.jpg"
+              onerror="this.src='https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=1920&q=95'"
+              alt="Century 21"/>
+            <span class="badge-cat" style="background:rgba(212,175,55,.9);color:#0a1520;">🏡 Immobilier</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Century 21 Hay Riad</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★</span><span style="color:#333;font-size:.88rem;">★</span>
+                <span class="rating">4.5</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">
+              Franchise internationale de référence. Vente, location et gestion de villas et appartements premium.
+            </p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+              Immeuble Al Irfane, Hay Riad, Rabat
+            </div>
+            <div class="card-foot">
+              <a href="https://maps.google.com/?q=Century+21+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/>
+                  <line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/>
+                </svg>
+                View on Map
+              </a>
+              <a href="#" class="btn-detail">Détails</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Wafa Immobilier -->
+        <div class="place-card" data-cat="immo">
+          <div class="card-img">
+            <img src="./images/wafa-immo.jpg"
+              onerror="this.src='https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?w=1920&q=95'"
+              alt="Wafa Immobilier"/>
+            <span class="badge-cat" style="background:rgba(212,175,55,.9);color:#0a1520;">🏢 Agence</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Wafa Immobilier</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★</span><span style="color:#333;font-size:.88rem;">★</span>
+                <span class="rating">4.4</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">
+              Spécialiste du financement immobilier et des projets résidentiels à Hay Riad et ses alentours.
+            </p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+              Avenue Annakhil, Hay Riad, Rabat
+            </div>
+            <div class="card-foot">
+              <a href="https://maps.google.com/?q=Wafa+Immobilier+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/>
+                  <line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/>
+                </svg>
+                View on Map
+              </a>
+              <a href="#" class="btn-detail">Détails</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ══ TÉLÉCOM ══ -->
+    <div id="group-telecom" class="mb-14">
+      <div class="cat-title">
+        <h2 class="font-playfair text-xl text-white">📱 Telecom &amp; Services — Hay Riad Rabat</h2>
+        <div class="cat-title-line"></div>
+        <span class="section-label text-xs">2 listings</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Maroc Telecom -->
+        <div class="place-card" data-cat="telecom">
+          <div class="card-img">
+            <img src="./images/maroc-telecom.jpg"
+              onerror="this.src='https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1920&q=95'"
+              alt="Maroc Telecom"/>
+            <span class="badge-cat" style="background:rgba(0,100,180,.9);color:#fff;">📡 Télécom</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Maroc Telecom</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★</span><span style="color:#333;font-size:.88rem;">★</span>
+                <span class="rating">4.3</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">
+              Agence officielle IAM — abonnements mobile, fibre optique, factures et service client.
+            </p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+              Centre Commercial Hay Riad, Rabat
+            </div>
+            <div class="card-foot">
+              <a href="https://maps.google.com/?q=Maroc+Telecom+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/>
+                  <line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/>
+                </svg>
+                View on Map
+              </a>
+              <a href="#" class="btn-detail">Détails</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Orange Maroc -->
+        <div class="place-card" data-cat="telecom">
+          <div class="card-img">
+            <img src="./images/orange-maroc.jpg"
+              onerror="this.src='https://images.unsplash.com/photo-1556742111-a301076d9d18?w=1920&q=95'"
+              alt="Orange Maroc"/>
+            <span class="badge-cat" style="background:rgba(255,120,0,.9);color:#fff;">📱 Télécom</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Orange Maroc</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★</span><span style="color:#333;font-size:.88rem;">★</span>
+                <span class="rating">4.2</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">
+              Boutique Orange — forfaits, smartphones, internet haut débit et solutions entreprises.
+            </p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24">
+                <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+                <circle cx="12" cy="9" r="2.5"/>
+              </svg>
+              Avenue Hay Riad, Secteur 8, Rabat
+            </div>
+            <div class="card-foot">
+              <a href="https://maps.google.com/?q=Orange+Maroc+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24">
+                  <polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/>
+                  <line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/>
+                </svg>
+                View on Map
+              </a>
+              <a href="#" class="btn-detail">Détails</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- ══ SHOPPING ══ -->
+    <div id="group-shopping" class="mb-4">
+      <div class="cat-title">
+        <h2 class="font-playfair text-xl text-white">🛒 Shopping &amp; Supermarkets — Hay Riad</h2>
+        <div class="cat-title-line"></div>
+        <span class="section-label text-xs">4 listings</span>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6" id="grid-shopping">
+
+        <!-- ── Marjane Hay Riad ── -->
+        <div class="place-card" data-cat="shopping">
+          <div class="card-img" style="height:230px;position:relative;overflow:hidden;">
+            <div class="ff-slider" data-index="0">
+              <img src="marjane hay riad 1 .png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1534723452862-4c874986ebad?w=1920&q=95'" alt="Marjane Hay Riad - Supermarket مرجان حي الرياض - Hypermarché Shopping Rabat" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+            </div>
+            <button class="ff-prev" onclick="ffSlide(this,-1)" aria-label="Prev">&#8249;</button>
+            <button class="ff-next" onclick="ffSlide(this,1)" aria-label="Next">&#8250;</button>
+            <span class="badge-cat" style="background:rgba(212,175,55,.18);color:#d4af37;border:1px solid rgba(212,175,55,.45);">🏬 Hypermarché</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Marjane Hay Riad</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★</span><span style="color:#555;font-size:.88rem;">★</span>
+                <span class="rating">4.4</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">Hay Riad's flagship hypermarket — groceries, clothing, electronics, food court and free parking. The prestige shopping reference of the district.</p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Boulevard Annakhil, Hay Riad, Rabat
+            </div>
+            <div class="card-foot">
+              <a href="https://www.google.com/maps/search/Marjane+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Carrefour Market ── -->
+        <div class="place-card" data-cat="shopping">
+          <div class="card-img" style="height:230px;position:relative;overflow:hidden;">
+            <div class="ff-slider" data-index="0">
+              <img src="carfuaur 1.png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=1920&q=95'" alt="Carrefour Market Hay Riad Rabat - كارفور حي الرياض - supermarché proximité Rue Ghita" style="width:100%;height:100%;object-fit:cover;display:block;"/>
+            </div>
+            <button class="ff-prev" onclick="ffSlide(this,-1)" aria-label="Prev">&#8249;</button>
+            <button class="ff-next" onclick="ffSlide(this,1)" aria-label="Next">&#8250;</button>
+            <span class="badge-cat" style="background:rgba(220,38,38,.85);color:#fff;">🛒 Supermarché</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Carrefour Market</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★</span><span style="color:#555;font-size:.88rem;">★</span>
+                <span class="rating">4.3</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">Well-stocked neighbourhood supermarket — fresh produce, bakery and frozen goods. Conveniently located on Rue Ghita.</p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Rue Ghita, Hay Riad, Rabat
+            </div>
+            <div class="card-foot">
+              <a href="https://www.google.com/maps/search/Carrefour+Market+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── Ataqadao ── -->
+        <div class="place-card" data-cat="shopping">
+          <div class="card-img" style="height:230px;position:relative;overflow:hidden;background:#fff;">
+            <img src="ataqadaw .png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1543168256-418811576931?w=1920&q=95'" alt="Ataqadao Hay Riad Rabat - grossiste alimentaire prix compétitifs services de proximité" style="width:100%;height:100%;object-fit:contain;display:block;padding:12px;transition:transform .5s ease;"/>
+            <span class="badge-cat" style="background:rgba(16,100,60,.9);color:#fff;">🏪 Grossiste</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">Ataqadao</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★</span><span style="color:#555;font-size:.88rem;">★</span>
+                <span class="rating">4.2</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">Hay Riad's go-to wholesale grocery supplier — ideal for bulk buying at highly competitive prices.</p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Hay Riad, Rabat
+            </div>
+            <div class="card-foot">
+              <a href="https://www.google.com/maps/search/Ataqadao+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- ── BIM ── -->
+        <div class="place-card" data-cat="shopping">
+          <div class="card-img" style="height:230px;position:relative;overflow:hidden;">
+            <img src="BIM.png" onerror="this.onerror=null;this.src='https://images.unsplash.com/photo-1604719312566-8912e9227c6a?w=1920&q=95'" alt="BIM Hay Riad Rabat - hard discount épicerie prix bas meilleur quartier Rabat" style="width:100%;height:100%;object-fit:cover;display:block;transition:transform .5s ease;"/>
+            <span class="badge-cat" style="background:rgba(30,64,175,.9);color:#fff;">🏷️ Hard Discount</span>
+            <span class="badge-status status-open">Open</span>
+          </div>
+          <div class="card-body">
+            <div class="flex items-start justify-between gap-2">
+              <h3 class="font-playfair text-base font-bold text-white leading-snug">BIM</h3>
+              <div class="flex items-center gap-1 flex-shrink-0">
+                <span class="stars">★★★★</span><span style="color:#555;font-size:.88rem;">★</span>
+                <span class="rating">4.1</span>
+              </div>
+            </div>
+            <p class="text-gray-500 text-xs leading-relaxed">Turkish hard-discount chain — groceries, canned goods and household essentials at unbeatable prices. Multiple locations across Hay Riad.</p>
+            <div class="card-addr">
+              <svg width="12" height="12" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/><circle cx="12" cy="9" r="2.5"/></svg>
+              Plusieurs points, Hay Riad, Rabat
+            </div>
+            <div class="card-foot">
+              <a href="https://www.google.com/maps/search/BIM+Hay+Riad+Rabat" target="_blank" class="btn-map">
+                <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="3 6 9 3 15 6 21 3 21 18 15 21 9 18 3 21"/><line x1="9" y1="3" x2="9" y2="18"/><line x1="15" y1="6" x2="15" y2="21"/></svg>
+                View on Map
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- No results message -->
+    <div id="noResults" class="hidden text-center py-16">
+      <p class="font-playfair text-2xl text-gray-600 italic">Aucun établissement trouvé.</p>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════
+     LUXURY STAYS SECTION
+═══════════════════════════════════ -->
+<section id="luxury-stays" class="py-20 px-5">
+  <div class="max-w-6xl mx-auto">
+
+    <!-- Header -->
+    <div class="flex flex-col sm:flex-row sm:items-end justify-between gap-5 mb-10">
+      <div>
+        <p class="section-label mb-2">Séjours à Hay Riad</p>
+        <h2 class="font-playfair text-4xl sm:text-5xl font-bold text-white">
+          Luxury <span class="gold-gradient">Stays</span>
+        </h2>
+      </div>
+      <!-- Last-updated bar — filled by JS -->
+      <div class="updated-bar" id="updatedBar">
+        <svg width="13" height="13" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9"/>
+          <polyline points="12 7 12 12 15 15"/>
+        </svg>
+        <span id="updatedText">Chargement…</span>
+        <button onclick="loadStays()" title="Rafraîchir"
+          class="ml-auto text-xs hover:text-yellow-300 transition-colors underline underline-offset-2">
+          ↻ Rafraîchir
+        </button>
+      </div>
+    </div>
+
+    <!-- Filter + sort bar -->
+    <div class="flex flex-wrap items-center justify-between gap-3 mb-8">
+      <div class="flex flex-wrap gap-2" id="stayTabs">
+        <button class="stab active" data-sfilter="all">Tout</button>
+        <button class="stab" data-sfilter="Villa">Villas</button>
+        <button class="stab" data-sfilter="Appartement">Appartements</button>
+        <button class="stab" data-sfilter="Riad">Riads</button>
+        <button class="stab" data-sfilter="Penthouse">Penthouses</button>
+        <button class="stab" data-sfilter="Studio">Studios</button>
+      </div>
+      <select class="sort-select" id="staySort" onchange="renderStays()">
+        <option value="default">Trier par défaut</option>
+        <option value="price_asc">Prix croissant</option>
+        <option value="price_desc">Prix décroissant</option>
+        <option value="rating">Mieux notés</option>
+        <option value="reviews">Plus d'avis</option>
+      </select>
+    </div>
+
+    <!-- Cards grid — filled by JS -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7" id="staysGrid">
+      <!-- Skeleton loaders shown while fetch runs -->
+      <div class="skeleton h-80 rounded-2xl"></div>
+      <div class="skeleton h-80 rounded-2xl"></div>
+      <div class="skeleton h-80 rounded-2xl"></div>
+    </div>
+
+    <!-- Empty state -->
+    <div id="staysEmpty" class="hidden text-center py-14">
+      <p class="font-playfair text-xl text-gray-600 italic">Aucun hébergement pour ce filtre.</p>
+    </div>
+
+    <!-- CTA -->
+    <div class="text-center mt-12">
+      <p class="text-gray-500 text-sm mb-4">
+        Les données sont lues depuis <code class="text-yellow-500 text-xs bg-white/5 px-1.5 py-0.5 rounded">stays.json</code>.
+        Modifiez ce fichier et cliquez ↻ Rafraîchir pour voir les nouvelles fiches instantanément.
+      </p>
+      <a href="https://www.airbnb.com/s/Hay-Riad--Rabat--Morocco/homes" target="_blank" class="btn-outline px-7 py-3 text-sm inline-block">
+        Voir plus sur Airbnb →
+      </a>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════
+     STAY DETAIL MODAL
+═══════════════════════════════════ -->
+<div id="stayModal" class="hidden fixed inset-0 z-[200] flex items-center justify-center p-4" style="background:rgba(0,0,0,0.75);backdrop-filter:blur(6px);" onclick="if(event.target===this)closeModal()">
+  <div class="relative w-full max-w-3xl max-h-[90vh] overflow-y-auto rounded-2xl p-6 md:p-8"
+       style="background:#0d1e2e;border:1px solid rgba(212,175,55,0.25);">
+    <button onclick="closeModal()" class="absolute top-4 right-4 text-gray-400 hover:text-white text-xl leading-none">✕</button>
+    <div id="modalContent"></div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════
+     FOOTER
+═══════════════════════════════════ -->
+<footer id="footer" class="pt-16 pb-8 px-5">
+  <div class="max-w-6xl mx-auto">
+
+    <div class="grid grid-cols-1 md:grid-cols-5 gap-10 pb-12 border-b border-[rgba(212,175,55,0.12)]">
+
+      <!-- Brand -->
+      <div class="md:col-span-1">
+        <div class="flex items-center gap-3 mb-5">
+          <svg width="34" height="34" viewBox="0 0 80 80" fill="none">
+            <polygon points="40,4 47,28 70,20 54,40 70,60 47,52 40,76 33,52 10,60 26,40 10,20 33,28"
+              fill="none" stroke="#d4af37" stroke-width="2"/>
+            <circle cx="40" cy="40" r="6" fill="#d4af37" opacity=".9"/>
+            <circle cx="40" cy="40" r="3.5" fill="#0a1520"/>
+          </svg>
+          <div>
+            <div class="font-playfair text-base font-bold gold-gradient">Hay Riad</div>
+            <div class="text-xs text-gray-600 tracking-widest uppercase">Guide · Rabat</div>
+          </div>
+        </div>
+        <p class="text-gray-500 text-sm leading-relaxed mb-5">
+          The ultimate guide to Rabat's most prestigious district. Every restaurant, pharmacy, shop and service — one click away.
+        </p>
+        <!-- Socials -->
+        <div class="flex gap-3">
+          <a href="#" class="w-9 h-9 rounded-full flex items-center justify-center border border-[rgba(212,175,55,0.22)] text-gray-500 hover:border-[#d4af37] hover:text-[#d4af37] transition-colors" aria-label="Instagram">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <rect x="2" y="2" width="20" height="20" rx="5"/>
+              <circle cx="12" cy="12" r="4"/>
+              <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+            </svg>
+          </a>
+          <a href="#" class="w-9 h-9 rounded-full flex items-center justify-center border border-[rgba(212,175,55,0.22)] text-gray-500 hover:border-[#d4af37] hover:text-[#d4af37] transition-colors" aria-label="Facebook">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>
+            </svg>
+          </a>
+          <a href="#" class="w-9 h-9 rounded-full flex items-center justify-center border border-[rgba(212,175,55,0.22)] text-gray-500 hover:border-[#d4af37] hover:text-[#d4af37] transition-colors" aria-label="WhatsApp">
+            <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Catégories -->
+      <div>
+        <h4 class="font-playfair text-base font-bold text-white mb-4">Catégories</h4>
+        <nav class="flex flex-col">
+          <a href="#directory" onclick="document.querySelector('[data-filter=cafes]').click()" class="footer-cat-link">
+            <span>☕</span> Cafés &amp; Coffee
+          </a>
+          <a href="#directory" onclick="document.querySelector('[data-filter=restaurants]').click()" class="footer-cat-link">
+            <span>🍽️</span> Restaurants
+          </a>
+          <a href="#directory" onclick="document.querySelector('[data-filter=fastfood]').click()" class="footer-cat-link">
+            <span>🍔</span> Fast Food
+          </a>
+          <a href="#directory" onclick="document.querySelector('[data-filter=sante]').click()" class="footer-cat-link">
+            <span>💊</span> Santé
+          </a>
+          <a href="#directory" onclick="document.querySelector('[data-filter=immo]').click()" class="footer-cat-link">
+            <span>🏡</span> Immobilier
+          </a>
+          <a href="#directory" onclick="document.querySelector('[data-filter=telecom]').click()" class="footer-cat-link">
+            <span>📱</span> Télécom
+          </a>
+          <a href="#directory" onclick="document.querySelector('[data-filter=shopping]').click()" class="footer-cat-link">
+            <span>🛒</span> Shopping
+          </a>
+        </nav>
+      </div>
+
+      <!-- À propos Hay Riad -->
+      <div>
+        <h4 class="font-playfair text-base font-bold text-white mb-4">About Hay Riad</h4>
+        <p class="text-gray-500 text-sm leading-relaxed mb-4">
+          Hay Riad is one of Rabat's most sought-after residential districts. With wide avenues, modern residences and a thriving commercial scene, it is the heartbeat of the capital.
+        </p>
+        <ul class="space-y-1">
+          <a href="#" class="footer-link">→ District History</a>
+          <a href="#" class="footer-link">→ Map &amp; Sectors</a>
+          <a href="#" class="footer-link">→ Transport &amp; Access</a>
+          <a href="#" class="footer-link">→ Local News</a>
+        </ul>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h4 class="font-playfair text-base font-bold text-white mb-4">Get in Touch</h4>
+        <ul class="space-y-3 text-sm text-gray-500 mb-5">
+          <li class="flex items-start gap-2">
+            <svg class="mt-0.5 flex-shrink-0" width="14" height="14" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+              <circle cx="12" cy="9" r="2.5"/>
+            </svg>
+            Hay Riad, Rabat, Maroc
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="mt-0.5 flex-shrink-0" width="14" height="14" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            contact@hayriadguide.ma
+          </li>
+          <li class="flex items-start gap-2">
+            <svg class="mt-0.5 flex-shrink-0" width="14" height="14" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.79 19.79 0 0 1 4.46 6.18 2 2 0 0 1 6.44 4h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L10.09 12a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 24 19z"/>
+            </svg>
+            +212 5 37 XX XX XX
+          </li>
+        </ul>
+        <ul class="space-y-1">
+          <a href="#" class="footer-link">→ Report an Error</a>
+          <a href="#" class="footer-link">→ Partnerships</a>
+        </ul>
+      </div>
+
+      <!-- Ajouter un lieu -->
+      <div>
+        <h4 class="font-playfair text-base font-bold text-white mb-2">List Your Business</h4>
+        <p class="text-gray-500 text-xs mb-4 leading-relaxed">Do you run a business in Hay Riad? Join our directory for free.</p>
+        <form onsubmit="submitBiz(event)" class="flex flex-col gap-3">
+          <input type="text"  class="footer-input" placeholder="Business name"/>
+          <input type="text"  class="footer-input" placeholder="Category (restaurant, pharmacy…)"/>
+          <input type="email" class="footer-input" placeholder="Your email"/>
+          <button type="submit" class="btn-gold py-2.5 text-sm font-bold rounded-full w-full">
+            Submit Request
+          </button>
+        </form>
+      </div>
+
+    </div>
+
+    <!-- Residents banner -->
+    <div class="my-8 py-5 px-6 rounded-2xl flex flex-col sm:flex-row items-center justify-between gap-4"
+         style="background:linear-gradient(135deg,rgba(212,175,55,.08),rgba(212,175,55,.03));border:1px solid rgba(212,175,55,.18);">
+      <div class="flex items-center gap-3">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#d4af37" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        <div>
+          <p class="text-white text-sm font-semibold font-playfair">Built for the residents of Hay Riad</p>
+          <p class="text-gray-500 text-xs mt-0.5">Your business isn't listed yet? Join the directory for free.</p>
+        </div>
+      </div>
+      <button onclick="document.getElementById('footer').scrollIntoView({behavior:'smooth'})"
+        class="btn-gold px-5 py-2.5 text-sm font-bold whitespace-nowrap flex-shrink-0">
+        + Submit My Business
+      </button>
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="pt-2 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-600">
+      <span>© 2026 Hay Riad Guide — Created with ❤️ for Rabat</span>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-gray-400 transition-colors">Privacy Policy</a>
+        <a href="#" class="hover:text-gray-400 transition-colors">Legal Notice</a>
+        <a href="#" class="hover:text-gray-400 transition-colors">Terms of Use</a>
+      </div>
+      <div class="flex items-center gap-1.5">
+        <svg width="10" height="10" viewBox="0 0 10 10">
+          <circle cx="5" cy="5" r="4" fill="#d4af37" opacity=".8"/>
+          <circle cx="5" cy="5" r="2" fill="#0a1520"/>
+        </svg>
+        <span style="color:var(--gold);">Rabat, Maroc</span>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+
+<!-- ═══════════════════════════════════
+     SCRIPTS
+═══════════════════════════════════ -->
+<script>
+  /* ── Mobile menu ── */
+  document.getElementById('menuBtn').addEventListener('click', () => {
+    document.getElementById('mobileMenu').classList.remove('hidden');
+  });
+
+  /* ── Hero quick-pills ── */
+  document.querySelectorAll('.pill').forEach(p => {
+    p.addEventListener('click', () => {
+      document.querySelectorAll('.pill').forEach(x => x.classList.remove('active'));
+      p.classList.add('active');
+      const q = p.dataset.q;
+      document.getElementById('searchInput').placeholder = `Search ${
+        q === 'restaurant' ? 'a restaurant' :
+        q === 'cafe'       ? 'a café' :
+        q === 'pharmacie'  ? 'a pharmacy' :
+        q === 'immobilier' ? 'a property' :
+                             'a supermarket'
+      } in Hay Riad…`;
+      // scroll to directory & apply filter
+      document.getElementById('directory').scrollIntoView({behavior:'smooth'});
+      const map = {restaurant:'cafe', cafe:'cafe', pharmacie:'sante', immobilier:'immo', shopping:'shopping'};
+      applyFilter(map[q] || 'all');
+    });
+  });
+
+  /* ── Inject reviews count into every place-card rating block ── */
+  (function() {
+    const counts = {
+      'The Brunch Café': '180+ avis', 'Caribou Coffee': '240+ avis',
+      'Between Friends Café': '310+ avis', 'Les Cafés Dubois': '95+ avis',
+      'L\'instant — Café Restaurant': '200+ avis', 'Le Piano': '150+ avis',
+      'Muskaan': '420+ avis', 'Little Mamma': '530+ avis',
+      'Huna Food Hall': '290+ avis', 'Matsuri': '175+ avis',
+      'Boca Chica': '380+ avis', 'Pizza Hut — Hay Riad': '713+ avis',
+      'Pokawa': '260+ avis', "Domino's Pizza": '480+ avis',
+      'S-Tacos': '340+ avis', 'Instafood Rabat': '190+ avis'
+    };
+    document.querySelectorAll('.place-card').forEach(card => {
+      const h3 = card.querySelector('h3');
+      if (!h3) return;
+      const name = h3.textContent.trim();
+      const label = counts[name];
+      if (!label) return;
+      const ratingEl = card.querySelector('.rating');
+      if (ratingEl && !ratingEl.nextElementSibling?.classList.contains('reviews-count')) {
+        const span = document.createElement('span');
+        span.className = 'reviews-count';
+        span.textContent = `(${label})`;
+        ratingEl.insertAdjacentElement('afterend', span);
+      }
+    });
+  })();
+
+  /* ── Active Nav via IntersectionObserver ── */
+  (function() {
+    const sections = ['explorer','directory','luxury-stays','footer'];
+    const navLinks = document.querySelectorAll('.nav-link');
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(l => {
+            l.classList.toggle('active', l.dataset.section === entry.target.id);
+          });
+        }
+      });
+    }, { threshold: 0.25 });
+    sections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el) obs.observe(el);
+    });
+  })();
+
+  /* ── Fast-Food Sub-Filter Tags ── */
+  document.getElementById('ffTagBar').addEventListener('click', e => {
+    const btn = e.target.closest('.fftag');
+    if (!btn) return;
+    document.querySelectorAll('.fftag').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    const tag = btn.dataset.fftag;
+    document.querySelectorAll('#grid-fastfood .place-card').forEach(card => {
+      const tags = card.dataset.fftag || '';
+      card.classList.toggle('hidden', tag !== 'all' && !tags.includes(tag));
+    });
+  });
+
+  /* ── Image Sliders ── */
+  const sliderImages = {
+    'boca-chica':     ['boca-chica1.png','boca-chica2.png','boca-chica3.png'],
+    'pizza-hut':      ['Pizza Hut 1.png','Pizza Hut 2.png','Pizza Hut 3.png'],
+    'pokawa':         ['Pokawa 1.png','Pokawa 2.png','Pokawa 3.png'],
+    'dominos':        ["Domino's Pizza 1.png","Domino's Pizza 2.jpg","Domino's Pizza 3.png"],
+    's-tacos':        ['s tacos 1.png','s tacos 2 .png','s tacos 3.png','s tacos 4.png'],
+    'instafood':      ['Instafood Rabat \u2013 Tacos 1 .jpg','Instafood Rabat \u2013 Tacos 2.png','Instafood Rabat \u2013 Tacos 5.png'],
+    'muskaan':        ['Muskaan 1.jpg','Muskaan 2.jpg','Muskaan 3.jpg','Muskaan 4 .jpg','Muskaan 5.png'],
+    'little-mamma':   ['unnamed-13.jpg','Little Mamma 1 .jpg','Little Mamma 2 .jpg','Little Mamma 3 .png','Little Mamma 4 .jpg','Little Mamma 5.jpg'],
+    'huna':           ['huna 1.jpg','huna 2.jpg','huna 3.jpg','huna 4.jpg','huna 5 .jpg','huna 6.jpg','huna 7.png'],
+    'matsuri':        ['matsuri 1.png','matsuri 2.png'],
+    'marjane-hr':     ['marjane hay riad 1 .png','marjane hay riad 2 .png'],
+    'carrefour-hr':   ['carfuaur 1.png','carfeaur 2.png']
+  };
+  const sliderFallbacks = {
+    'boca-chica':     'https://images.unsplash.com/photo-1568901346375-23c9450c58cd?w=1920&q=95',
+    'pizza-hut':      'https://images.unsplash.com/photo-1574071318508-1cdbab80d002?w=1920&q=95',
+    'pokawa':         'https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=1920&q=95',
+    'dominos':        'https://images.unsplash.com/photo-1513104890138-7c749659a591?w=1920&q=95',
+    's-tacos':        'https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=1920&q=95',
+    'instafood':      'https://images.unsplash.com/photo-1551504734-5ee1c4a1479b?w=1920&q=95',
+    'muskaan':        'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1920&q=95',
+    'little-mamma':   'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=1920&q=95',
+    'huna':           'https://images.unsplash.com/photo-1567521464027-f127ff144326?w=1920&q=95',
+    'matsuri':        'https://images.unsplash.com/photo-1579871494447-9811cf80d66c?w=1920&q=95',
+    'marjane-hr':     'https://images.unsplash.com/photo-1534723452862-4c874986ebad?w=1920&q=95',
+    'carrefour-hr':   'https://images.unsplash.com/photo-1578916171728-46686eac8d58?w=1920&q=95'
+  };
+
+  // Init sliders
+  document.querySelectorAll('.ff-slider').forEach(slider => {
+    const card = slider.closest('.place-card');
+    const img = slider.querySelector('img');
+    const key = card.querySelector('h3').textContent.trim()
+      .toLowerCase()
+      .replace('domino\'s pizza','dominos')
+      .replace('pizza hut — hay riad','pizza-hut')
+      .replace('pokawa','pokawa')
+      .replace('boca chica','boca-chica')
+      .replace('s-tacos','s-tacos')
+      .replace('instafood rabat','instafood')
+      .replace('muskaan','muskaan')
+      .replace('little mamma','little-mamma')
+      .replace('huna food hall','huna')
+      .replace('matsuri','matsuri')
+      .replace('marjane hay riad','marjane-hr')
+      .replace('carrefour market','carrefour-hr');
+    slider.dataset.key = key;
+    slider.dataset.index = '0';
+
+    // Add dots
+    const imgs = sliderImages[key] || [];
+    if (imgs.length > 1) {
+      const dotsWrap = document.createElement('div');
+      dotsWrap.className = 'ff-dots';
+      imgs.forEach((_, i) => {
+        const d = document.createElement('div');
+        d.className = 'ff-dot' + (i === 0 ? ' active' : '');
+        dotsWrap.appendChild(d);
+      });
+      slider.closest('.card-img').appendChild(dotsWrap);
+    }
+  });
+
+  // Touch swipe for mobile sliders
+  document.querySelectorAll('.card-img').forEach(cardImg => {
+    let touchStartX = 0;
+    cardImg.addEventListener('touchstart', e => { touchStartX = e.touches[0].clientX; }, { passive: true });
+    cardImg.addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].clientX - touchStartX;
+      if (Math.abs(dx) < 40) return;
+      const fakeBtn = cardImg.querySelector(dx < 0 ? '.ff-next' : '.ff-prev');
+      if (fakeBtn) ffSlide(fakeBtn, dx < 0 ? 1 : -1);
+    }, { passive: true });
+  });
+
+  function ffSlide(btn, dir) {
+    const cardImg = btn.closest('.card-img');
+    const slider = cardImg.querySelector('.ff-slider');
+    const key = slider.dataset.key;
+    const imgs = sliderImages[key] || [];
+    if (imgs.length <= 1) return;
+    let idx = (parseInt(slider.dataset.index) + dir + imgs.length) % imgs.length;
+    slider.dataset.index = idx;
+    const imgEl = slider.querySelector('img');
+    imgEl.src = imgs[idx];
+    imgEl.onerror = () => { imgEl.onerror=null; imgEl.src = sliderFallbacks[key] || ''; };
+    // update dots
+    const dots = cardImg.querySelectorAll('.ff-dot');
+    dots.forEach((d,i) => d.classList.toggle('active', i === idx));
+  }
+
+  /* ── Search ── */
+  function runSearch() {
+    const q = document.getElementById('searchInput').value.trim().toLowerCase();
+    if (!q) return;
+    let found = 0;
+    document.querySelectorAll('.place-card, .pharma-card').forEach(card => {
+      const text = card.innerText.toLowerCase();
+      const show = text.includes(q);
+      card.classList.toggle('hidden', !show);
+      if (show) found++;
+    });
+    // reset filter tabs
+    document.querySelectorAll('.ftab').forEach(t => t.classList.remove('active'));
+    showGroups();
+    document.getElementById('noResults').classList.toggle('hidden', found > 0);
+    document.getElementById('directory').scrollIntoView({behavior:'smooth'});
+  }
+
+  document.getElementById('searchInput').addEventListener('keydown', e => {
+    if (e.key === 'Enter') runSearch();
+  });
+
+  /* ── Navbar: transparent → glassmorphism on scroll ── */
+  (function () {
+    const nav = document.querySelector('.navbar');
+    function syncNav() {
+      nav.classList.toggle('scrolled', window.scrollY > 60);
+    }
+    syncNav();
+    window.addEventListener('scroll', syncNav, { passive: true });
+  })();
+
+  /* ── Filter tabs ── */
+  // Sticky filter bar shadow on scroll
+  window.addEventListener('scroll', () => {
+    const bar = document.getElementById('filterBar');
+    bar.classList.toggle('scrolled', window.scrollY > 200);
+  }, { passive: true });
+
+  document.getElementById('filterBar').addEventListener('click', e => {
+    const btn = e.target.closest('.ftab');
+    if (!btn) return;
+    document.querySelectorAll('.ftab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    applyFilter(btn.dataset.filter);
+    // Smooth scroll to the matching group section
+    const sectionMap = {
+      cafes: 'group-cafes', restaurants: 'group-restaurants',
+      fastfood: 'group-fastfood', sante: 'group-sante',
+      immo: 'group-immo', telecom: 'group-telecom', shopping: 'group-shopping'
+    };
+    const target = sectionMap[btn.dataset.filter];
+    if (target) {
+      const el = document.getElementById(target);
+      if (el) setTimeout(() => el.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60);
+    }
+  });
+
+  function applyFilter(filter) {
+    document.getElementById('searchInput').value = '';
+    let found = 0;
+    document.querySelectorAll('.place-card, .pharma-card').forEach(card => {
+      const show = filter === 'all' || card.dataset.cat === filter;
+      card.classList.toggle('hidden', !show);
+      if (show) found++;
+    });
+    showGroups();
+    document.getElementById('noResults').classList.toggle('hidden', found > 0);
+  }
+
+  function showGroups() {
+    // show/hide category group headers based on visible cards
+    ['cafes','restaurants','fastfood','sante','immo','telecom','shopping'].forEach(cat => {
+      const group = document.getElementById('group-' + cat);
+      if (!group) return;
+      const visible = group.querySelectorAll('.place-card:not(.hidden), .pharma-card:not(.hidden)').length > 0;
+      group.style.display = visible ? '' : 'none';
+    });
+  }
+
+  /* ── Footer form ── */
+  function submitBiz(e) {
+    e.preventDefault();
+    e.target.innerHTML = '<p class="text-center py-3 text-sm" style="color:var(--gold)">✓ Demande envoyée ! Nous vous contactons sous 48h.</p>';
+  }
+
+  /* ════════════════════════════════════════════════════
+     LUXURY STAYS — dynamic JSON loader & renderer
+     ════════════════════════════════════════════════════
+     HOW IT WORKS
+     ─────────────
+     1. loadStays() fetches stays.json (works with a local
+        server: `npx serve .` or VS Code Live Server).
+        Without a server, it falls back to EMBEDDED_STAYS
+        defined below — just edit that object instead.
+     2. renderStays() reads the active type-filter + sort,
+        then stamps out cards via buildCard().
+     3. To update listings: edit stays.json → click ↻.
+     ════════════════════════════════════════════════════ */
+
+  /* ── Fallback data (works without a server) ── */
+  const EMBEDDED_STAYS = {
+    "meta": { "updated": "2026-04-18", "area": "Hay Riad, Rabat", "currency": "MAD" },
+    "stays": [
+      { "id":1, "title":"Appartement Moderne — Hay Riad",        "type":"Appartement", "price":650,  "rating":4.88, "reviews":112, "guests":4, "bedrooms":2, "bathrooms":2, "image":"./images/stay-appart-1.jpg",       "image_fallback":"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80", "amenities":["WiFi","Clim","Cuisine","Parking"], "description":"Appartement haut standing entièrement rénové, finitions premium et vue imprenable sur Hay Riad.", "address":"Hay Riad, Rabat", "airbnb_link":"https://www.airbnb.com/rooms/1603025270298012972", "badge":"Superhost" },
+      { "id":2, "title":"Appartement Élégant — Vue Quartier",    "type":"Appartement", "price":520,  "rating":4.85, "reviews":67,  "guests":3, "bedrooms":2, "bathrooms":1, "image":"./images/stay-appart-2.jpg",       "image_fallback":"https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80", "amenities":["WiFi","Clim","Netflix","Cuisine"],  "description":"Appartement design et chaleureux au cœur de Hay Riad, idéal pour séjour professionnel ou en couple.", "address":"Hay Riad, Rabat", "airbnb_link":"https://www.airbnb.com/rooms/992841101703282766", "badge":null },
+      { "id":3, "title":"Villa Prestige avec Piscine Privée",    "type":"Villa",       "price":1800, "rating":4.95, "reviews":38,  "guests":8, "bedrooms":4, "bathrooms":3, "image":"./images/stay-villa-prestige.jpg", "image_fallback":"https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80", "amenities":["Piscine","WiFi","Parking","Clim"],  "description":"Villa somptueuse avec piscine privée chauffée et terrasse panoramique. Idéale pour familles ou groupes.", "address":"Hay Riad, Rabat", "airbnb_link":"https://www.airbnb.com/rooms/1566823455980048998", "badge":"Coup de cœur" },
+      { "id":4, "title":"Appartement Cosy — Hay Riad",           "type":"Appartement", "price":480,  "rating":4.90, "reviews":54,  "guests":3, "bedrooms":2, "bathrooms":1, "image":"https://a0.muscache.com/im/pictures/hosting/Hosting-U3RheVN1cHBseUxpc3Rpbmc6MTQ0MzY4OTgzMzczNzA4MTQ4OQ==/original/d2c0264a-1191-47d4-b5cf-09eb142019b7.jpeg?im_w=960", "image_fallback":"https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?w=800&q=80", "amenities":["WiFi","Clim","Cuisine","Parking"],  "description":"Appartement confortable et bien équipé en plein cœur de Hay Riad, à proximité de toutes les commodités.", "address":"Hay Riad, Rabat", "airbnb_link":"https://www.airbnb.com/rooms/1443689833737081489", "badge":null },
+      { "id":5, "title":"Bel Appartement — Secteur Calme",       "type":"Appartement", "price":560,  "rating":4.87, "reviews":41,  "guests":4, "bedrooms":2, "bathrooms":2, "image":"https://a0.muscache.com/im/pictures/hosting/Hosting-1548405447099421280/original/63c79318-7756-4483-9836-67aed23f3e10.jpeg?im_w=960",                                                                                       "image_fallback":"https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?w=800&q=80", "amenities":["WiFi","Clim","Netflix","Parking"],  "description":"Appartement lumineux dans un secteur calme de Hay Riad, idéal pour familles ou séjour prolongé.",         "address":"Hay Riad, Rabat", "airbnb_link":"https://www.airbnb.com/rooms/1548405447099421280", "badge":null },
+      { "id":6, "title":"Appartement Premium — Hay Riad",        "type":"Appartement", "price":700,  "rating":4.93, "reviews":29,  "guests":4, "bedrooms":3, "bathrooms":2, "image":"https://a0.muscache.com/im/pictures/hosting/Hosting-1629724937410757439/original/f9099412-6ecd-4e71-b19d-bd01cc4c837a.jpeg?im_w=960",                                                                                       "image_fallback":"https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&q=80", "amenities":["WiFi","Clim","Cuisine","Terrasse"], "description":"Appartement premium avec finitions haut de gamme et terrasse privée. Quartier résidentiel prisé de Hay Riad.", "address":"Hay Riad, Rabat", "airbnb_link":"https://www.airbnb.com/rooms/1629724937410757439", "badge":"Nouveau" }
+    ]
+  };
+
+  /* ── App state ── */
+  let staysData = null;   // raw JSON
+  let activeFilter = 'all';
+
+  /* ── 1. Load JSON (fetch → fallback to embedded) ── */
+  async function loadStays() {
+    document.getElementById('updatedText').textContent = 'Chargement…';
+    showSkeletons();
+    try {
+      const res = await fetch('./stays.json?t=' + Date.now()); // cache-bust
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      staysData = await res.json();
+    } catch (_) {
+      /* No server running — use embedded data silently */
+      staysData = EMBEDDED_STAYS;
+    }
+    updateMeta();
+    renderStays();
+  }
+
+  /* ── 2. Update last-updated bar ── */
+  function updateMeta() {
+    const m = staysData.meta;
+    document.getElementById('updatedText').textContent =
+      `Mis à jour le ${m.updated} · ${staysData.stays.length} hébergements · ${m.area}`;
+  }
+
+  /* ── 3. Render cards with filter + sort ── */
+  function renderStays() {
+    const sort   = document.getElementById('staySort').value;
+    const grid   = document.getElementById('staysGrid');
+    const empty  = document.getElementById('staysEmpty');
+
+    let list = staysData.stays.filter(s =>
+      activeFilter === 'all' || s.type === activeFilter
+    );
+
+    if (sort === 'price_asc')   list.sort((a,b) => a.price - b.price);
+    if (sort === 'price_desc')  list.sort((a,b) => b.price - a.price);
+    if (sort === 'rating')      list.sort((a,b) => b.rating - a.rating);
+    if (sort === 'reviews')     list.sort((a,b) => b.reviews - a.reviews);
+
+    if (list.length === 0) {
+      grid.innerHTML = '';
+      empty.classList.remove('hidden');
+      return;
+    }
+    empty.classList.add('hidden');
+    grid.innerHTML = list.map(buildCard).join('');
+  }
+
+  /* ── 4. Build one card HTML string ── */
+  const ICONS = {
+    'Piscine':'🏊','WiFi':'📶','Parking':'🅿️','Clim':'❄️','Cuisine':'🍳','Gym':'🏋️',
+    'Terrasse':'🌇','Petit-déj':'🥐','Jacuzzi':'🛁','Concierge':'🛎️','Netflix':'🎬',
+    'Jardin':'🌿','BBQ':'🔥','Balcon':'🏙️','Lave-linge':'🧺','Chauffage':'🌡️'
+  };
+
+  function buildCard(s) {
+    const stars      = buildStars(s.rating);
+    const amenHTML   = (s.amenities||[]).slice(0,5).map(a =>
+      `<span class="amenity-chip">${ICONS[a]??'✓'} ${a}</span>`).join('');
+    const badgeHTML  = s.badge ? `<span class="stay-badge">${s.badge}</span>` : '';
+    const totalHTML  = s.price_total
+      ? `<div class="text-gray-500 text-xs mt-0.5">MAD ${s.price_total.toLocaleString('fr-FR')} total · ${s.price_nights} nuits</div>`
+      : '';
+    const noteHTML   = s.note
+      ? `<div class="text-yellow-600 text-xs mt-1 leading-snug">⚠️ ${s.note}</div>` : '';
+
+    return `
+    <div class="stay-card" onclick="openModal(${s.id})" style="cursor:pointer;">
+      <div class="stay-img">
+        <img src="${s.image}" onerror="this.onerror=null;this.src='${s.image_fallback}'" alt="${s.title}" loading="lazy"/>
+        ${badgeHTML}
+        <div class="stay-price-badge">
+          <span class="font-playfair text-base font-bold" style="color:var(--gold-l)">${s.price.toLocaleString('fr-FR')} MAD</span>
+          <span class="text-gray-400 text-xs"> / nuit</span>
+        </div>
+      </div>
+      <div class="stay-body">
+        <div class="flex items-center justify-between gap-2">
+          <span class="text-xs font-semibold px-2.5 py-1 rounded-full"
+            style="background:rgba(212,175,55,0.12);color:var(--gold);border:1px solid rgba(212,175,55,0.25);">${s.type}</span>
+          <div class="flex items-center gap-1">
+            <span style="color:var(--gold);font-size:.85rem;">${stars}</span>
+            <span class="text-xs font-bold" style="color:var(--gold-l)">${s.rating}</span>
+            <span class="text-gray-600 text-xs">(${s.reviews})</span>
+          </div>
+        </div>
+        <h3 class="font-playfair text-base font-bold text-white leading-snug">${s.title}</h3>
+        <p class="text-gray-500 text-xs leading-relaxed line-clamp-2">${s.description}</p>
+        <div class="flex items-center gap-3 text-xs text-gray-500">
+          <span>👥 ${s.guests} pers.</span>
+          <span>🛏 ${s.bedrooms} ch.</span>
+          <span>🚿 ${s.bathrooms} sdb</span>
+        </div>
+        <div class="flex flex-wrap gap-1.5">${amenHTML}</div>
+        ${totalHTML}
+        ${noteHTML}
+        <div class="flex items-center gap-2 mt-auto pt-1" onclick="event.stopPropagation()">
+          <a href="${s.airbnb_link}" target="_blank" rel="noopener" class="btn-map flex-1 justify-center text-center">
+            <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+              <polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/>
+            </svg>
+            Voir sur Airbnb
+          </a>
+          <button onclick="shareStay(${s.id})" class="btn-detail px-3" title="Partager">
+            <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/>
+              <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+              <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>`;
+  }
+
+  /* ── Modal: show full apartment details ── */
+  function openModal(id) {
+    const s = staysData.stays.find(x => x.id === id);
+    if (!s) return;
+
+    const amenFullHTML = s.amenities_full
+      ? Object.entries(s.amenities_full).map(([cat, items]) => `
+          <div class="mb-4">
+            <p class="text-xs font-semibold uppercase tracking-widest mb-2" style="color:var(--gold)">${cat}</p>
+            <div class="flex flex-wrap gap-2">
+              ${items.map(i => `<span class="amenity-chip text-xs">✓ ${i}</span>`).join('')}
+            </div>
+          </div>`).join('')
+      : (s.amenities||[]).map(a => `<span class="amenity-chip">${ICONS[a]??'✓'} ${a}</span>`).join('');
+
+    const totalHTML = s.price_total
+      ? `<div class="flex justify-between text-sm py-2 border-b border-white/5">
+           <span class="text-gray-400">${s.price_nights} nuits × ${s.price.toLocaleString('fr-FR')} MAD</span>
+           <span class="text-white font-semibold">MAD ${s.price_total.toLocaleString('fr-FR')}</span>
+         </div>` : '';
+
+    const noteHTML = s.note
+      ? `<div class="mt-3 p-3 rounded-xl text-xs text-yellow-500 leading-relaxed"
+             style="background:rgba(255,200,0,0.07);border:1px solid rgba(255,200,0,0.2);">
+           ⚠️ ${s.note}
+         </div>` : '';
+
+    document.getElementById('modalContent').innerHTML = `
+      <div class="flex flex-col md:flex-row gap-6">
+        <!-- Image -->
+        <div class="md:w-1/2 flex-shrink-0 rounded-2xl overflow-hidden" style="height:260px">
+          <img src="${s.image}" onerror="this.onerror=null;this.src='${s.image_fallback}'"
+            alt="${s.title}" class="w-full h-full object-cover"/>
+        </div>
+        <!-- Info -->
+        <div class="flex-1 flex flex-col gap-3">
+          <div class="flex items-center gap-2 flex-wrap">
+            <span class="text-xs font-semibold px-2.5 py-1 rounded-full"
+              style="background:rgba(212,175,55,0.12);color:var(--gold);border:1px solid rgba(212,175,55,0.22);">${s.type}</span>
+            ${s.badge ? `<span class="stay-badge" style="position:static;">${s.badge}</span>` : ''}
+          </div>
+          <h2 class="font-playfair text-xl font-bold text-white leading-snug">${s.title}</h2>
+          <div class="flex items-center gap-2">
+            <span style="color:var(--gold)">${buildStars(s.rating)}</span>
+            <span class="text-sm font-bold" style="color:var(--gold-l)">${s.rating}</span>
+            <span class="text-gray-500 text-sm">${s.reviews} avis</span>
+          </div>
+          <div class="flex gap-4 text-sm text-gray-400">
+            <span>👥 ${s.guests} pers.</span>
+            <span>🛏 ${s.bedrooms} chambre${s.bedrooms>1?'s':''}</span>
+            <span>🚿 ${s.bathrooms} sdb</span>
+          </div>
+          <!-- Price box -->
+          <div class="rounded-xl p-4 mt-1" style="background:rgba(212,175,55,0.07);border:1px solid rgba(212,175,55,0.2)">
+            <div class="flex justify-between items-baseline mb-2">
+              <span class="font-playfair text-2xl font-bold" style="color:var(--gold-l)">${s.price.toLocaleString('fr-FR')} MAD</span>
+              <span class="text-gray-500 text-sm">/ nuit</span>
+            </div>
+            ${totalHTML}
+            <a href="${s.airbnb_link}" target="_blank" rel="noopener"
+              class="btn-map w-full justify-center mt-3 text-sm py-3 rounded-xl block text-center">
+              Réserver sur Airbnb →
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Description -->
+      <div class="mt-6">
+        <h4 class="font-playfair text-base font-bold text-white mb-2">À propos</h4>
+        <p class="text-gray-400 text-sm leading-relaxed">${s.description}</p>
+        ${noteHTML}
+      </div>
+
+      <!-- Amenities -->
+      <div class="mt-6">
+        <h4 class="font-playfair text-base font-bold text-white mb-3">Équipements</h4>
+        ${amenFullHTML}
+      </div>
+
+      <!-- Address -->
+      <div class="mt-4 flex items-center gap-2 text-sm text-gray-500">
+        <svg width="14" height="14" fill="none" stroke="#d4af37" stroke-width="2" viewBox="0 0 24 24">
+          <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/>
+          <circle cx="12" cy="9" r="2.5"/>
+        </svg>
+        ${s.address}
+      </div>`;
+
+    document.getElementById('stayModal').classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeModal() {
+    document.getElementById('stayModal').classList.add('hidden');
+    document.body.style.overflow = '';
+  }
+
+  /* ── 5. Star builder ── */
+  function buildStars(rating) {
+    const full  = Math.floor(rating);
+    const half  = rating - full >= 0.5;
+    const empty = 5 - full - (half ? 1 : 0);
+    return '★'.repeat(full) + (half ? '½' : '') + '<span style="color:#2a3d50">' + '★'.repeat(empty) + '</span>';
+  }
+
+  /* ── 6. Skeleton placeholders while loading ── */
+  function showSkeletons() {
+    document.getElementById('staysGrid').innerHTML =
+      Array(3).fill('<div class="skeleton rounded-2xl" style="height:360px"></div>').join('');
+  }
+
+  /* ── 7. Filter tab clicks ── */
+  document.getElementById('stayTabs').addEventListener('click', e => {
+    const btn = e.target.closest('.stab');
+    if (!btn || !staysData) return;
+    document.querySelectorAll('.stab').forEach(t => t.classList.remove('active'));
+    btn.classList.add('active');
+    activeFilter = btn.dataset.sfilter;
+    renderStays();
+  });
+
+  /* ── 8. Share button ── */
+  function shareStay(id) {
+    const s = staysData.stays.find(x => x.id === id);
+    if (!s) return;
+    if (navigator.share) {
+      navigator.share({ title: s.title, text: s.description, url: s.airbnb_link });
+    } else {
+      navigator.clipboard.writeText(s.airbnb_link)
+        .then(() => alert('Lien copié dans le presse-papier !'))
+        .catch(() => alert(s.airbnb_link));
+    }
+  }
+
+  /* ── Close modal on Escape ── */
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+  /* ── Boot ── */
+  loadStays();
+</script>
+
+</body>
+</html>
